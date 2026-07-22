@@ -18,4 +18,5 @@ func tick_down() -> void:
 
 
 func explode() -> void:
+	Global.spawn_big_explosion.emit(global_position)
 	queue_free()
