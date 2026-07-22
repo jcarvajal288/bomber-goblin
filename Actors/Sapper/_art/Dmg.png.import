@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://d0ml3nafd5mqp"
-path="res://.godot/imported/Dmg.png-8bfa51340067344d5556edbf41cc35f6.ctex"
+uid="uid://g6fkw6vva2od"
+path="res://.godot/imported/Dmg.png-409547054fe9a7af8a1bfeeb68a73dae.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Dmg.png"
-dest_files=["res://.godot/imported/Dmg.png-8bfa51340067344d5556edbf41cc35f6.ctex"]
+source_file="res://Actors/Sapper/_art/Dmg.png"
+dest_files=["res://.godot/imported/Dmg.png-409547054fe9a7af8a1bfeeb68a73dae.ctex"]
 
 [params]
 
