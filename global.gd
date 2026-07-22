@@ -20,4 +20,5 @@ enum CollisionLayer {
 @warning_ignore_start("unused_signal")
 signal spawn_bomb(bomb_position: Vector2)
 signal spawn_big_explosion(bomb_position: Vector2)
+signal spawn_small_explosion(explosion_position: Vector2)
 @warning_ignore_restore("unused_signal")

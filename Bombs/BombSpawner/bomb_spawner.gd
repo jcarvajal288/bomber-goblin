@@ -2,11 +2,13 @@ extends Node2D
 
 const BLACK_BOMB_SCENE = preload("res://Bombs/BlackBomb/BlackBomb.tscn")
 const BIG_EXPLOSION_SCENE = preload("res://Bombs/Effects/BigExplosion/BigExplosion.tscn")
+const SMALL_EXPLOSION_SCENE = preload("res://Bombs/Effects/SmallExplosion/SmallExplosion.tscn")
 
 
 func _ready() -> void:
 	Global.spawn_bomb.connect(_spawn_bomb)
 	Global.spawn_big_explosion.connect(_spawn_big_explosion)
+	Global.spawn_small_explosion.connect(_spawn_small_explosion)
 
 
 func _spawn_bomb(bomb_position: Vector2) -> void:
@@ -29,5 +31,11 @@ func _spawn_bomb(bomb_position: Vector2) -> void:
 
 func _spawn_big_explosion(bomb_position: Vector2) -> void:
 	var explosion = BIG_EXPLOSION_SCENE.instantiate()
+	explosion.global_position = bomb_position
+	add_child(explosion)
+
+
+func _spawn_small_explosion(bomb_position: Vector2) -> void:
+	var explosion = SMALL_EXPLOSION_SCENE.instantiate()
 	explosion.global_position = bomb_position
 	add_child(explosion)

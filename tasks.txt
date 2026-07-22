@@ -11,3 +11,9 @@ x bombs delete themselves every Y seconds
 x bombs spawn snapped to grid
 x make 3x3 explosion area
 x explosion areas pulse in and out
+_ explosions kill the player
+_ make different color bombs with different explosion areas
+    x 3x3 square - black
+    _ 5x5 cross - blue
+    _ 5x5 X - green
+    _ 5x5 square - red

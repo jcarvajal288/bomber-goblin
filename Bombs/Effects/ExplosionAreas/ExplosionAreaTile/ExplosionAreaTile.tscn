@@ -1,0 +1,9 @@
+[gd_scene format=3 uid="uid://cs4g4aox0xt03"]
+
+[ext_resource type="Texture2D" uid="uid://c22aadjplegj5" path="res://Bombs/_art/BombAreaIndicators.png" id="1_2ftvj"]
+[ext_resource type="Script" uid="uid://blfrdkeadw3se" path="res://Bombs/Effects/ExplosionAreas/ExplosionAreaTile/explosion_area_tile.gd" id="2_lyhf4"]
+
+[node name="ExplosionAreaTile" type="Sprite2D" unique_id=720239746]
+texture = ExtResource("1_2ftvj")
+hframes = 3
+script = ExtResource("2_lyhf4")
