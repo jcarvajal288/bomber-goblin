@@ -2,6 +2,8 @@ class_name Sapper extends CharacterBody2D
 
 const speed = 40
 
+var is_alive: bool = true
+
 
 func _ready() -> void:
 	Global.player = self
@@ -11,7 +13,8 @@ func _ready() -> void:
 
 
 func drop_bomb() -> void:
-	Global.spawn_bomb.emit(global_position)
+	if is_alive:
+		Global.spawn_bomb.emit(global_position)
 
 
 func on_explosion() -> void:
