@@ -5,7 +5,8 @@ var player: CharacterBody2D = null
 enum RenderOrder {
 	FLOOR = 1,
 	WALL = 2,
-	ITEM = 3,
+	INDICATOR = 3,
+	ITEM = 4,
 	PLAYER = 5,
 }
 

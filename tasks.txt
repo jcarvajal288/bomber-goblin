@@ -9,4 +9,4 @@ x Create bomb sprite
 x sapper drops a bomb every X seconds
 x bombs delete themselves every Y seconds
 x bombs spawn snapped to grid
-_ make 3x3 explosion preview (think up better name?)
+x make 3x3 explosion area

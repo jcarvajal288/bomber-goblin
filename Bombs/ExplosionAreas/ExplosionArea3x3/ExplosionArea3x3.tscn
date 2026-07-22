@@ -1,0 +1,51 @@
+[gd_scene format=3 uid="uid://b1831skdtd6i7"]
+
+[ext_resource type="Script" uid="uid://b2lnitmvfpews" path="res://Bombs/ExplosionAreas/ExplosionArea3x3/explosion_area_3x_3.gd" id="1_vtrla"]
+[ext_resource type="Texture2D" uid="uid://c22aadjplegj5" path="res://Bombs/_art/BombAreaIndicators.png" id="2_6wi6g"]
+
+[node name="ExplosionArea3x3" type="Node2D" unique_id=733002243]
+script = ExtResource("1_vtrla")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=165651786]
+position = Vector2(-8, -8)
+texture = ExtResource("2_6wi6g")
+hframes = 3
+
+[node name="Sprite2D2" type="Sprite2D" parent="." unique_id=938914350]
+position = Vector2(0, -8)
+texture = ExtResource("2_6wi6g")
+hframes = 3
+
+[node name="Sprite2D3" type="Sprite2D" parent="." unique_id=1492887198]
+position = Vector2(8, -8)
+texture = ExtResource("2_6wi6g")
+hframes = 3
+
+[node name="Sprite2D4" type="Sprite2D" parent="." unique_id=1800769321]
+position = Vector2(-8, 0)
+texture = ExtResource("2_6wi6g")
+hframes = 3
+
+[node name="Sprite2D5" type="Sprite2D" parent="." unique_id=895409401]
+texture = ExtResource("2_6wi6g")
+hframes = 3
+
+[node name="Sprite2D6" type="Sprite2D" parent="." unique_id=1138366090]
+position = Vector2(8, 0)
+texture = ExtResource("2_6wi6g")
+hframes = 3
+
+[node name="Sprite2D7" type="Sprite2D" parent="." unique_id=2128610073]
+position = Vector2(-8, 8)
+texture = ExtResource("2_6wi6g")
+hframes = 3
+
+[node name="Sprite2D8" type="Sprite2D" parent="." unique_id=2029147498]
+position = Vector2(0, 8)
+texture = ExtResource("2_6wi6g")
+hframes = 3
+
+[node name="Sprite2D9" type="Sprite2D" parent="." unique_id=141166631]
+position = Vector2(8, 8)
+texture = ExtResource("2_6wi6g")
+hframes = 3
