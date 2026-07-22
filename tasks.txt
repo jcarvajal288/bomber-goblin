@@ -1,9 +1,11 @@
 x Create sapper character
     x idle, walk animations
     x move with arrow keys
-_ Add basic background and edge walls
++ Add basic background 
+    _ add edge walls
     _ add collision
-_ Create bomb sprite
-    _ add countdown
-_ sapper drops a bomb every X seconds
-_ bombs explode every Y seconds
+x Create bomb sprite
+    x add countdown
+x sapper drops a bomb every X seconds
+x bombs delete themselves every Y seconds
+x bombs spawn snapped to grid
