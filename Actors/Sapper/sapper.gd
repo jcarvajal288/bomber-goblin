@@ -12,3 +12,7 @@ func _ready() -> void:
 
 func drop_bomb() -> void:
 	Global.spawn_bomb.emit(global_position)
+
+
+func on_explosion() -> void:
+	$StateMachine.change_state($StateMachine/Die)

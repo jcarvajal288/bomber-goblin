@@ -85,6 +85,4 @@ animations = [{
 z_index = 6
 sprite_frames = SubResource("SpriteFrames_1w6l7")
 autoplay = "default"
-frame = 9
-frame_progress = 1.0
 script = ExtResource("2_077hr")

@@ -9,6 +9,8 @@
 [ext_resource type="PackedScene" uid="uid://bn3nipgbvywwr" path="res://Actors/Components/Directors/InputDirector/InputDirector.tscn" id="5_krp2d"]
 [ext_resource type="PackedScene" uid="uid://osuwdheggsf" path="res://Actors/Sapper/States/Idle/Idle.tscn" id="7_oydhb"]
 [ext_resource type="PackedScene" uid="uid://d3w7w46px18m4" path="res://Actors/Sapper/States/Move/Move.tscn" id="8_oydhb"]
+[ext_resource type="PackedScene" uid="uid://jbqrxxmvflap" path="res://Actors/Sapper/States/Die/Die.tscn" id="10_fqi41"]
+[ext_resource type="Script" uid="uid://i7opgpipowve" path="res://Actors/Sapper/States/Die/die.gd" id="11_lkuk1"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_fuhmt"]
 radius = 4.0
@@ -587,6 +589,9 @@ move_state = NodePath("../Move")
 [node name="Move" parent="StateMachine" unique_id=1192316004 node_paths=PackedStringArray("idle_state") instance=ExtResource("8_oydhb")]
 idle_state = NodePath("../Idle")
 
+[node name="Die" parent="StateMachine" unique_id=410834258 instance=ExtResource("10_fqi41")]
+script = ExtResource("11_lkuk1")
+
 [node name="BombTimer" type="Timer" parent="." unique_id=120096198]
-wait_time = 3.0
+wait_time = 2.0
 autostart = true

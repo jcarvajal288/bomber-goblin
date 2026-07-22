@@ -22,3 +22,6 @@ signal spawn_bomb(bomb_position: Vector2)
 signal spawn_big_explosion(bomb_position: Vector2)
 signal spawn_small_explosion(explosion_position: Vector2)
 @warning_ignore_restore("unused_signal")
+
+func wait_for_sec(secs: float) -> void:
+	await get_tree().create_timer(secs).timeout
