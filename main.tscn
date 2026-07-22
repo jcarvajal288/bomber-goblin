@@ -1,9 +1,14 @@
 [gd_scene format=3 uid="uid://b2mv5djarnwqe"]
 
 [ext_resource type="PackedScene" uid="uid://bpj2g5ebv3n3y" path="res://Actors/Sapper/Sapper.tscn" id="1_ig7tw"]
+[ext_resource type="PackedScene" uid="uid://bo70h1oji36wg" path="res://Levels/MountainStronghold/Level1.tscn" id="2_0xm2m"]
 
 [node name="Node2D" type="Node2D" unique_id=352477210]
 position = Vector2(116, 79)
 
 [node name="Sapper" parent="." unique_id=1352799463 instance=ExtResource("1_ig7tw")]
+z_index = 5
 position = Vector2(3, -4)
+
+[node name="Level1" parent="." unique_id=2145577900 instance=ExtResource("2_0xm2m")]
+position = Vector2(-116, -79)
