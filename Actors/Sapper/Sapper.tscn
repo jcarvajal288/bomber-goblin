@@ -586,3 +586,7 @@ move_state = NodePath("../Move")
 
 [node name="Move" parent="StateMachine" unique_id=1192316004 node_paths=PackedStringArray("idle_state") instance=ExtResource("8_oydhb")]
 idle_state = NodePath("../Idle")
+
+[node name="BombTimer" type="Timer" parent="." unique_id=120096198]
+wait_time = 3.0
+autostart = true

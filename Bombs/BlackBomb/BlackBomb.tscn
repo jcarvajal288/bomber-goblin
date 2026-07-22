@@ -1,0 +1,14 @@
+[gd_scene format=3 uid="uid://jt4wakppdoqp"]
+
+[ext_resource type="Script" uid="uid://bhgi38jd1j6fj" path="res://Bombs/BlackBomb/black_bomb.gd" id="1_dvqo8"]
+[ext_resource type="Texture2D" uid="uid://yfdcpsxgevxp" path="res://Bombs/_art/BlackBomb.png" id="2_084xw"]
+
+[node name="BlackBomb" type="Node2D" unique_id=1165797410]
+script = ExtResource("1_dvqo8")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1196730902]
+texture = ExtResource("2_084xw")
+hframes = 9
+
+[node name="Timer" type="Timer" parent="." unique_id=1583913750]
+autostart = true

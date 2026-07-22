@@ -5,6 +5,7 @@ var player: CharacterBody2D = null
 enum RenderOrder {
 	FLOOR = 1,
 	WALL = 2,
+	ITEM = 3,
 	PLAYER = 5,
 }
 
@@ -14,3 +15,7 @@ enum CollisionLayer {
 	ITEM = 3,
 	WALL = 4
 }
+
+@warning_ignore_start("unused_signal")
+signal spawn_bomb(bomb_position: Vector2)
+@warning_ignore_restore("unused_signal")

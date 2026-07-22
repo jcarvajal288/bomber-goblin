@@ -1,0 +1,6 @@
+[gd_scene format=3 uid="uid://dqwy4kavgmryr"]
+
+[ext_resource type="Script" uid="uid://bjo3krg64p01u" path="res://Bombs/BombSpawner/bomb_spawner.gd" id="1_dpb1n"]
+
+[node name="BombSpawner" type="Node2D" unique_id=736221780]
+script = ExtResource("1_dpb1n")
