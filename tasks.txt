@@ -10,3 +10,4 @@ x sapper drops a bomb every X seconds
 x bombs delete themselves every Y seconds
 x bombs spawn snapped to grid
 x make 3x3 explosion area
+x explosion areas pulse in and out
