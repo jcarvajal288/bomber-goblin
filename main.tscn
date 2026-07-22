@@ -1,9 +1,9 @@
 [gd_scene format=3 uid="uid://b2mv5djarnwqe"]
 
-[ext_resource type="Texture2D" uid="uid://d0ml3nafd5mqp" path="res://Dmg.png" id="1_ig7tw"]
+[ext_resource type="PackedScene" uid="uid://bpj2g5ebv3n3y" path="res://Actors/Sapper/Sapper.tscn" id="1_ig7tw"]
 
 [node name="Node2D" type="Node2D" unique_id=352477210]
 position = Vector2(116, 79)
 
-[node name="Sprite2D" type="Sprite2D" parent="." unique_id=637030050]
-texture = ExtResource("1_ig7tw")
+[node name="Sapper" parent="." unique_id=1352799463 instance=ExtResource("1_ig7tw")]
+position = Vector2(3, -4)

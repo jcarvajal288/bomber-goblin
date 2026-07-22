@@ -1,8 +1,14 @@
 [gd_scene format=3 uid="uid://bpj2g5ebv3n3y"]
 
+[ext_resource type="Script" uid="uid://dphu5p5y7a2pw" path="res://Actors/Sapper/sapper.gd" id="1_db7ls"]
 [ext_resource type="Texture2D" uid="uid://bsnmivwl6gysl" path="res://Actors/Sapper/_art/Idle.png" id="1_dk22c"]
 [ext_resource type="Texture2D" uid="uid://bk5vioaxq6r0v" path="res://Actors/Sapper/_art/Run.png" id="2_q3eb2"]
 [ext_resource type="Texture2D" uid="uid://bxm6xvf6h802o" path="res://Actors/Sapper/_art/Die.png" id="2_uonqn"]
+[ext_resource type="Script" uid="uid://cjcwdbe2ny4mi" path="res://Actors/Components/animation_player.gd" id="4_0g32f"]
+[ext_resource type="Script" uid="uid://ks6syixdxawi" path="res://addons/StateMachine/state_machine.gd" id="5_7qq12"]
+[ext_resource type="PackedScene" uid="uid://bn3nipgbvywwr" path="res://Actors/Components/Directors/InputDirector/InputDirector.tscn" id="5_krp2d"]
+[ext_resource type="PackedScene" uid="uid://osuwdheggsf" path="res://Actors/Sapper/States/Idle/Idle.tscn" id="7_oydhb"]
+[ext_resource type="PackedScene" uid="uid://d3w7w46px18m4" path="res://Actors/Sapper/States/Move/Move.tscn" id="8_oydhb"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_fuhmt"]
 radius = 4.0
@@ -550,6 +556,7 @@ _data = {
 }
 
 [node name="Sapper" type="CharacterBody2D" unique_id=1352799463]
+script = ExtResource("1_db7ls")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=1498186765]
 texture = ExtResource("1_dk22c")
@@ -562,3 +569,20 @@ shape = SubResource("CircleShape2D_fuhmt")
 [node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=2002501869]
 libraries/ = SubResource("AnimationLibrary_f1g8q")
 autoplay = &"idleSouthEast"
+script = ExtResource("4_0g32f")
+
+[node name="InputDirector" parent="." unique_id=1537187238 node_paths=PackedStringArray("subject") instance=ExtResource("5_krp2d")]
+subject = NodePath("..")
+
+[node name="StateMachine" type="Node" parent="." unique_id=1366876635 node_paths=PackedStringArray("director", "animation_player", "starting_state")]
+script = ExtResource("5_7qq12")
+director = NodePath("../InputDirector")
+animation_player = NodePath("../AnimationPlayer")
+starting_state = NodePath("Idle")
+metadata/_custom_type_script = "uid://ks6syixdxawi"
+
+[node name="Idle" parent="StateMachine" unique_id=99206137 node_paths=PackedStringArray("move_state") instance=ExtResource("7_oydhb")]
+move_state = NodePath("../Move")
+
+[node name="Move" parent="StateMachine" unique_id=1192316004 node_paths=PackedStringArray("idle_state") instance=ExtResource("8_oydhb")]
+idle_state = NodePath("../Idle")

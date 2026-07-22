@@ -1,6 +1,6 @@
-_ Create sapper character
-    _ idle, walk animations
-    _ move with arrow keys
+x Create sapper character
+    x idle, walk animations
+    x move with arrow keys
 _ Add basic background and edge walls
     _ add collision
 _ Create bomb sprite

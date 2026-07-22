@@ -24,6 +24,10 @@ window/size/window_height_override=1280
 window/stretch/mode="viewport"
 window/stretch/scale_mode="integer"
 
+[editor_plugins]
+
+enabled=PackedStringArray("res://addons/Director/plugin.cfg", "res://addons/State/plugin.cfg", "res://addons/StateMachine/plugin.cfg")
+
 [physics]
 
 3d/physics_engine="Jolt Physics"
