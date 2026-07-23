@@ -22,14 +22,17 @@ x make different explosion areas
 x randomly select from explosion areas for each bomb
 x make explosion shape preview window
 _ display score
+    - score, level timer, enemy timer
 _ simple destructable and scorable object
 _ melee chase enemy
 
 
 NOTES
-    - goal is to destroy all destructable objects in the stage
+    - goal is to destroy all treasure chests in the stage
+        - different sizes of chests give different score
     - earn exponential points for chaining bombs into each other
     - enemies spawn from generator objects tied to a countdown visible in the UI
+    - three stages: outside courtyard, inside, rampart
 
 NICE TO HAVES
     - powerups
