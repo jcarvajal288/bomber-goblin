@@ -1,5 +1,7 @@
 class_name BlackBomb extends StaticBody2D
 
+const BASE_SCORE = 50
+
 var explosion_shape: Node2D
 
 var has_exploded = false
@@ -30,6 +32,7 @@ func explode() -> void:
 	has_exploded = true
 	Global.spawn_big_explosion.emit(global_position)
 	explosion_shape.explode()
+	Global.score += BASE_SCORE
 
 
 func on_explosion() -> void:

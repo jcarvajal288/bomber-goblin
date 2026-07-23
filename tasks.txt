@@ -21,8 +21,8 @@ x make different explosion areas
     x 1x7 line
 x randomly select from explosion areas for each bomb
 x make explosion shape preview window
-_ display score
-    - score, level timer, enemy timer
+x display score
+    x score, chest count, level timer, enemy timer
 _ simple destructable and scorable object
 _ melee chase enemy
 
@@ -37,3 +37,4 @@ NOTES
 NICE TO HAVES
     - powerups
         - increase bomb drop rate to 1/sec for 10 secs
+    - score labels on individual things exploding

@@ -31,4 +31,4 @@ func wait_for_sec(secs: float) -> void:
 
 
 var score: int = 0
-var chests: int = 0
+var chests_left: int = 0
