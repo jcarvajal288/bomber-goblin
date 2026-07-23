@@ -18,4 +18,8 @@ func drop_bomb() -> void:
 
 
 func on_explosion(_multiplier: int) -> void:
+	die()
+
+
+func die() -> void:
 	$StateMachine.change_state($StateMachine/Die)

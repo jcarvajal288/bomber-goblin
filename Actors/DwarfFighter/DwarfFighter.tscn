@@ -1,18 +1,21 @@
 [gd_scene format=3 uid="uid://4h4cxqh8tc2"]
 
-[ext_resource type="Texture2D" uid="uid://clvr80ytkroao" path="res://Actors/DwarfFighter/_art/Figther_Idle.png" id="1_ccgmi"]
 [ext_resource type="Script" uid="uid://dbgn0hhrvhdl3" path="res://Actors/DwarfFighter/dwarf_fighter.gd" id="1_m6nn1"]
 [ext_resource type="Resource" uid="uid://crxskq5q1fwj4" path="res://Actors/DwarfFighter/dwarf_fighter_data.tres" id="2_1enln"]
 [ext_resource type="Texture2D" uid="uid://w7adpt5py0y8" path="res://Actors/DwarfFighter/_art/Figther_Attack.png" id="2_deftg"]
 [ext_resource type="Script" uid="uid://cjcwdbe2ny4mi" path="res://Actors/Components/animation_player.gd" id="2_qj23a"]
 [ext_resource type="Texture2D" uid="uid://dav5gneghpfqg" path="res://Actors/DwarfFighter/_art/Figther_walk.png" id="2_qpj02"]
 [ext_resource type="Texture2D" uid="uid://dr4qhed0rncle" path="res://Actors/DwarfFighter/_art/Figther_Die.png" id="3_deftg"]
+[ext_resource type="Texture2D" uid="uid://c5qgt32dvvfpd" path="res://Actors/DwarfFighter/_art/Figther_Idle_Special.png" id="5_1enln"]
 [ext_resource type="PackedScene" uid="uid://bxugiubj68ejh" path="res://Actors/Components/Directors/ChaseDirector/ChaseDirector.tscn" id="7_ynjuc"]
 [ext_resource type="Script" uid="uid://ks6syixdxawi" path="res://addons/StateMachine/state_machine.gd" id="8_d8mer"]
 [ext_resource type="PackedScene" uid="uid://p3rlhcsgp5jb" path="res://Actors/DwarfFighter/States/Idle/Idle.tscn" id="9_5o5v4"]
 [ext_resource type="PackedScene" uid="uid://btjugf3o81w7f" path="res://Actors/DwarfFighter/States/Move/Move.tscn" id="10_1enln"]
 [ext_resource type="PackedScene" uid="uid://dw1ld8bbmqf1h" path="res://Actors/DwarfFighter/States/Attack/Attack.tscn" id="11_bjqbi"]
 [ext_resource type="PackedScene" uid="uid://bf7dkkb8k7wdb" path="res://Actors/DwarfFighter/States/Die/Die.tscn" id="12_pycd7"]
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_bjqbi"]
+load_path = "res://.godot/imported/Figther_Idle.png-1cb515eb2c8c4ea79cf750f50e5a4151.ctex"
 
 [sub_resource type="Animation" id="Animation_qpj02"]
 length = 0.001
@@ -26,7 +29,7 @@ tracks/0/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
 "update": 1,
-"values": [ExtResource("1_ccgmi")]
+"values": [SubResource("CompressedTexture2D_bjqbi")]
 }
 tracks/1/type = "value"
 tracks/1/imported = false
@@ -63,6 +66,18 @@ tracks/3/keys = {
 "transitions": PackedFloat32Array(1),
 "update": 1,
 "values": [0]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("AttackCircle/CollisionShape2D:disabled")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
 }
 
 [sub_resource type="Animation" id="Animation_1enln"]
@@ -117,6 +132,18 @@ tracks/3/keys = {
 "update": 1,
 "values": [8, 9, 10, 11]
 }
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("AttackCircle/CollisionShape2D:disabled")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0, 0.10012242, 0.3008103),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 1,
+"values": [true, false, true]
+}
 
 [sub_resource type="Animation" id="Animation_bjqbi"]
 resource_name = "attackNorthWest"
@@ -169,6 +196,18 @@ tracks/3/keys = {
 "transitions": PackedFloat32Array(1, 1, 1, 1),
 "update": 1,
 "values": [12, 13, 14, 15]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("AttackCircle/CollisionShape2D:disabled")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0, 0.10056545, 0.3008103),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 1,
+"values": [true, false, true]
 }
 
 [sub_resource type="Animation" id="Animation_3oye0"]
@@ -223,6 +262,18 @@ tracks/3/keys = {
 "update": 1,
 "values": [0, 1, 2, 3]
 }
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("AttackCircle/CollisionShape2D:disabled")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0, 0.10100847, 0.3008103),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 1,
+"values": [true, false, true]
+}
 
 [sub_resource type="Animation" id="Animation_5o5v4"]
 resource_name = "attackSouthWest"
@@ -275,6 +326,18 @@ tracks/3/keys = {
 "transitions": PackedFloat32Array(1, 1, 1, 1),
 "update": 1,
 "values": [4, 5, 6, 7]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("AttackCircle/CollisionShape2D:disabled")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0, 0.098350346, 0.3008103),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 1,
+"values": [true, false, true]
 }
 
 [sub_resource type="Animation" id="Animation_pycd7"]
@@ -345,7 +408,7 @@ tracks/0/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
 "update": 1,
-"values": [ExtResource("1_ccgmi")]
+"values": [ExtResource("5_1enln")]
 }
 tracks/1/type = "value"
 tracks/1/imported = false
@@ -357,7 +420,7 @@ tracks/1/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
 "update": 1,
-"values": [16]
+"values": [31]
 }
 tracks/2/type = "value"
 tracks/2/imported = false
@@ -378,10 +441,10 @@ tracks/3/path = NodePath("Sprite2D:frame")
 tracks/3/interp = 1
 tracks/3/loop_wrap = true
 tracks/3/keys = {
-"times": PackedFloat32Array(0, 0.2, 0.4, 0.6, 0.8, 1, 1.2, 1.4, 1.6, 1.8000001, 2, 2.2, 2.4, 2.6000001, 2.8, 3),
-"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"times": PackedFloat32Array(0, 0.2, 0.4, 0.6, 0.8, 1, 1.2, 1.4, 1.6, 1.8000001, 2, 2.2, 2.4, 2.6000001, 2.8, 3, 3.20002),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
 "update": 1,
-"values": [32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47]
+"values": [62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 92]
 }
 
 [sub_resource type="Animation" id="Animation_msljm"]
@@ -399,7 +462,7 @@ tracks/0/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
 "update": 1,
-"values": [ExtResource("1_ccgmi")]
+"values": [ExtResource("5_1enln")]
 }
 tracks/1/type = "value"
 tracks/1/imported = false
@@ -411,7 +474,7 @@ tracks/1/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
 "update": 1,
-"values": [16]
+"values": [31]
 }
 tracks/2/type = "value"
 tracks/2/imported = false
@@ -435,12 +498,12 @@ tracks/3/keys = {
 "times": PackedFloat32Array(0, 0.2, 0.4, 0.6, 0.8, 1, 1.2, 1.4, 1.6, 1.8000001, 2, 2.2, 2.4, 2.6000001, 2.8, 3),
 "transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
 "update": 1,
-"values": [48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63]
+"values": [93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108]
 }
 
 [sub_resource type="Animation" id="Animation_deftg"]
 resource_name = "idleSouthEast"
-length = 3.200020047684014
+length = 6.200020092387497
 loop_mode = 1
 step = 0.2
 tracks/0/type = "value"
@@ -453,7 +516,7 @@ tracks/0/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
 "update": 1,
-"values": [ExtResource("1_ccgmi")]
+"values": [ExtResource("5_1enln")]
 }
 tracks/1/type = "value"
 tracks/1/imported = false
@@ -465,7 +528,7 @@ tracks/1/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
 "update": 1,
-"values": [16]
+"values": [31]
 }
 tracks/2/type = "value"
 tracks/2/imported = false
@@ -486,10 +549,10 @@ tracks/3/path = NodePath("Sprite2D:frame")
 tracks/3/interp = 1
 tracks/3/loop_wrap = true
 tracks/3/keys = {
-"times": PackedFloat32Array(0, 0.2, 0.4, 0.6, 0.8, 1, 1.2, 1.4, 1.6, 1.8000001, 2, 2.2, 2.4, 2.6000001, 2.8, 3),
-"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"times": PackedFloat32Array(0, 0.2, 0.4, 0.6, 0.8, 0.99999994, 1.2, 1.4, 1.6, 1.8, 1.9999999, 2.2, 2.4, 2.6000001, 2.8, 3, 3.2, 3.3999999, 3.6, 3.7999997, 3.9999998, 4.2000003, 4.4, 4.6, 4.8, 5, 5.2000003, 5.4, 5.6, 5.8, 6),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
 "update": 1,
-"values": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+"values": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30]
 }
 
 [sub_resource type="Animation" id="Animation_ccgmi"]
@@ -507,7 +570,7 @@ tracks/0/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
 "update": 1,
-"values": [ExtResource("1_ccgmi")]
+"values": [ExtResource("5_1enln")]
 }
 tracks/1/type = "value"
 tracks/1/imported = false
@@ -519,7 +582,7 @@ tracks/1/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
 "update": 1,
-"values": [16]
+"values": [31]
 }
 tracks/2/type = "value"
 tracks/2/imported = false
@@ -540,10 +603,10 @@ tracks/3/path = NodePath("Sprite2D:frame")
 tracks/3/interp = 1
 tracks/3/loop_wrap = true
 tracks/3/keys = {
-"times": PackedFloat32Array(0, 0.2, 0.4, 0.6, 0.8, 1, 1.2, 1.4, 1.6, 1.8000001, 2, 2.2, 2.4, 2.6000001, 2.8, 3),
-"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"times": PackedFloat32Array(0, 0.2, 0.4, 0.6, 0.8, 1, 1.2, 1.4, 1.6, 1.8000001, 2, 2.2, 2.4, 2.6000001, 2.8, 3, 3.20002),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
 "update": 1,
-"values": [16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31]
+"values": [31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 61]
 }
 
 [sub_resource type="Animation" id="Animation_ynjuc"]
@@ -783,13 +846,16 @@ _data = {
 [sub_resource type="CircleShape2D" id="CircleShape2D_fuhmt"]
 radius = 5.0990195
 
+[sub_resource type="CircleShape2D" id="CircleShape2D_p6ya2"]
+radius = 20.09975
+
 [node name="DwarfFighter" type="CharacterBody2D" unique_id=1536819497]
 script = ExtResource("1_m6nn1")
 data = ExtResource("2_1enln")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=2020589377]
 scale = Vector2(2, 2)
-texture = ExtResource("1_ccgmi")
+texture = SubResource("CompressedTexture2D_bjqbi")
 hframes = 16
 vframes = 4
 
@@ -824,3 +890,10 @@ attack_state = NodePath("../Attack")
 idle_state = NodePath("../Idle")
 
 [node name="Die" parent="StateMachine" unique_id=1283882327 instance=ExtResource("12_pycd7")]
+
+[node name="AttackCircle" type="Area2D" parent="." unique_id=1565126226]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="AttackCircle" unique_id=1998476794]
+shape = SubResource("CircleShape2D_p6ya2")
+disabled = true
+debug_color = Color(0.6, 0, 0, 0.41960785)
