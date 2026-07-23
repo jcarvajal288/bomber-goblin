@@ -1,0 +1,7 @@
+[gd_scene format=3 uid="uid://bxugiubj68ejh"]
+
+[ext_resource type="Script" uid="uid://ceoktf4dtw0g5" path="res://Actors/Components/Directors/ChaseDirector/chase_director.gd" id="1_w8b0s"]
+
+[node name="ChaseDirector" type="Node" unique_id=1022971343]
+script = ExtResource("1_w8b0s")
+metadata/_custom_type_script = "uid://vcquxpbufkme"

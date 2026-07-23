@@ -1,0 +1,8 @@
+[gd_scene format=3 uid="uid://bf7dkkb8k7wdb"]
+
+[ext_resource type="Script" uid="uid://bedgnqh3c57ik" path="res://Actors/DwarfFighter/States/Die/die.gd" id="1_4vmh0"]
+
+[node name="Die" type="Node" unique_id=1283882327]
+script = ExtResource("1_4vmh0")
+animation_name = "die"
+metadata/_custom_type_script = "uid://dcdpgd4lv64sg"

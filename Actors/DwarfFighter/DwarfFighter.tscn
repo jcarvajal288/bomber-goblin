@@ -1,10 +1,17 @@
 [gd_scene format=3 uid="uid://4h4cxqh8tc2"]
 
 [ext_resource type="Texture2D" uid="uid://clvr80ytkroao" path="res://Actors/DwarfFighter/_art/Figther_Idle.png" id="1_ccgmi"]
+[ext_resource type="Script" uid="uid://dbgn0hhrvhdl3" path="res://Actors/DwarfFighter/dwarf_fighter.gd" id="1_m6nn1"]
 [ext_resource type="Texture2D" uid="uid://w7adpt5py0y8" path="res://Actors/DwarfFighter/_art/Figther_Attack.png" id="2_deftg"]
 [ext_resource type="Script" uid="uid://cjcwdbe2ny4mi" path="res://Actors/Components/animation_player.gd" id="2_qj23a"]
 [ext_resource type="Texture2D" uid="uid://dav5gneghpfqg" path="res://Actors/DwarfFighter/_art/Figther_walk.png" id="2_qpj02"]
 [ext_resource type="Texture2D" uid="uid://dr4qhed0rncle" path="res://Actors/DwarfFighter/_art/Figther_Die.png" id="3_deftg"]
+[ext_resource type="PackedScene" uid="uid://bxugiubj68ejh" path="res://Actors/Components/Directors/ChaseDirector/ChaseDirector.tscn" id="7_ynjuc"]
+[ext_resource type="Script" uid="uid://ks6syixdxawi" path="res://addons/StateMachine/state_machine.gd" id="8_d8mer"]
+[ext_resource type="PackedScene" uid="uid://p3rlhcsgp5jb" path="res://Actors/DwarfFighter/States/Idle/Idle.tscn" id="9_5o5v4"]
+[ext_resource type="PackedScene" uid="uid://btjugf3o81w7f" path="res://Actors/DwarfFighter/States/Move/Move.tscn" id="10_1enln"]
+[ext_resource type="PackedScene" uid="uid://dw1ld8bbmqf1h" path="res://Actors/DwarfFighter/States/Attack/Attack.tscn" id="11_bjqbi"]
+[ext_resource type="PackedScene" uid="uid://bf7dkkb8k7wdb" path="res://Actors/DwarfFighter/States/Die/Die.tscn" id="12_pycd7"]
 
 [sub_resource type="Animation" id="Animation_qpj02"]
 length = 0.001
@@ -776,6 +783,7 @@ _data = {
 radius = 5.0990195
 
 [node name="DwarfFighter" type="CharacterBody2D" unique_id=1536819497]
+script = ExtResource("1_m6nn1")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=2020589377]
 scale = Vector2(2, 2)
@@ -791,3 +799,25 @@ script = ExtResource("2_qj23a")
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1351760715]
 scale = Vector2(2, 2)
 shape = SubResource("CircleShape2D_fuhmt")
+
+[node name="ChaseDirector" parent="." unique_id=1022971343 instance=ExtResource("7_ynjuc")]
+
+[node name="StateMachine" type="Node" parent="." unique_id=1790917844 node_paths=PackedStringArray("director", "animation_player", "starting_state")]
+script = ExtResource("8_d8mer")
+director = NodePath("../ChaseDirector")
+animation_player = NodePath("../AnimationPlayer")
+starting_state = NodePath("Idle")
+metadata/_custom_type_script = "uid://ks6syixdxawi"
+
+[node name="Idle" parent="StateMachine" unique_id=1418731189 node_paths=PackedStringArray("move_state", "attack_state") instance=ExtResource("9_5o5v4")]
+move_state = NodePath("../Move")
+attack_state = NodePath("../Attack")
+
+[node name="Move" parent="StateMachine" unique_id=1719778130 node_paths=PackedStringArray("idle_state", "attack_state") instance=ExtResource("10_1enln")]
+idle_state = NodePath("../Idle")
+attack_state = NodePath("../Attack")
+
+[node name="Attack" parent="StateMachine" unique_id=1240768130 node_paths=PackedStringArray("idle_state") instance=ExtResource("11_bjqbi")]
+idle_state = NodePath("../Idle")
+
+[node name="Die" parent="StateMachine" unique_id=1283882327 instance=ExtResource("12_pycd7")]

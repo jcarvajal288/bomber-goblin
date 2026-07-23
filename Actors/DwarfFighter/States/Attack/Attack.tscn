@@ -1,0 +1,9 @@
+[gd_scene format=3 uid="uid://dw1ld8bbmqf1h"]
+
+[ext_resource type="Script" uid="uid://bby3ek0cj7vlb" path="res://Actors/DwarfFighter/States/Attack/attack.gd" id="1_17wec"]
+
+[node name="Attack" type="Node" unique_id=1240768130]
+script = ExtResource("1_17wec")
+animation_name = "attack"
+animation_type = 1
+metadata/_custom_type_script = "uid://dcdpgd4lv64sg"

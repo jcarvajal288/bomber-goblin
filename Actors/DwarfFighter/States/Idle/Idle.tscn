@@ -1,0 +1,9 @@
+[gd_scene format=3 uid="uid://p3rlhcsgp5jb"]
+
+[ext_resource type="Script" uid="uid://b5j32pu14rtvy" path="res://Actors/DwarfFighter/States/Idle/idle.gd" id="1_u8bp4"]
+
+[node name="Idle" type="Node" unique_id=1418731189]
+script = ExtResource("1_u8bp4")
+animation_name = "idle"
+animation_type = 1
+metadata/_custom_type_script = "uid://dcdpgd4lv64sg"
