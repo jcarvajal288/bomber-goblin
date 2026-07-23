@@ -11,6 +11,8 @@
 z_index = 5
 position = Vector2(117, 84)
 
+[node name="Camera2D" type="Camera2D" parent="Sapper" unique_id=910537265]
+
 [node name="Level1" parent="." unique_id=2145577900 instance=ExtResource("2_0xm2m")]
 
 [node name="BombSpawner" parent="." unique_id=736221780 instance=ExtResource("3_h2yge")]
