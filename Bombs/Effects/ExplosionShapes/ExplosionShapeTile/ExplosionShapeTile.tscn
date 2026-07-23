@@ -4,7 +4,7 @@
 [ext_resource type="Script" uid="uid://blfrdkeadw3se" path="res://Bombs/Effects/ExplosionShapes/ExplosionShapeTile/explosion_shape_tile.gd" id="2_a1u8t"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_fuhmt"]
-size = Vector2(8, 8)
+size = Vector2(5.75, 5.75)
 
 [node name="ExplosionShapeTile" type="Sprite2D" unique_id=720239746]
 scale = Vector2(2, 2)
@@ -18,4 +18,5 @@ collision_mask = 3
 monitoring = false
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=410943860]
+position = Vector2(0, 0.375)
 shape = SubResource("RectangleShape2D_fuhmt")

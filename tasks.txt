@@ -26,7 +26,7 @@ x display score
 x press Z button to cycle explosion shape
 x simple destructable and scorable object
 x multiply scores by bomb explode count
-_ add chest object
+x add chest objects
 _ melee chase enemy
 
 

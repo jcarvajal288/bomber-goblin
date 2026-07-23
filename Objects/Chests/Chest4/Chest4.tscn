@@ -1,0 +1,23 @@
+[gd_scene format=3 uid="uid://dpjj5e11bqe1v"]
+
+[ext_resource type="Script" uid="uid://cm5ujep6i3c12" path="res://Objects/Chests/chest.gd" id="1_rvxto"]
+[ext_resource type="Resource" uid="uid://ccqudu0n5cuun" path="res://Objects/Chests/Chest4/chest4.tres" id="2_rvxto"]
+[ext_resource type="Texture2D" uid="uid://cftob2gqm6tkc" path="res://Objects/Chests/_art/chests.png" id="3_ade1c"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_p6ya2"]
+size = Vector2(20, 14)
+
+[node name="Chest4" type="StaticBody2D" unique_id=2079527918]
+script = ExtResource("1_rvxto")
+data = ExtResource("2_rvxto")
+metadata/_custom_type_script = "uid://dtopctfuadv65"
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1280152460]
+scale = Vector2(2, 2)
+texture = ExtResource("3_ade1c")
+hframes = 6
+frame = 3
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=81332571]
+position = Vector2(0, -1)
+shape = SubResource("RectangleShape2D_p6ya2")
