@@ -20,4 +20,8 @@ x make different explosion areas
     x 7x1 line
     x 1x7 line
 x randomly select from explosion areas for each bomb
-_ make explosion shape preview window
+x make explosion shape preview window
+
+
+BUGS
+    x bombs placed adjacent to other bomb areas will explode
