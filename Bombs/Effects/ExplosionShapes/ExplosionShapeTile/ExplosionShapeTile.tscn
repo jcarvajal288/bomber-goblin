@@ -7,6 +7,7 @@
 size = Vector2(8, 8)
 
 [node name="ExplosionShapeTile" type="Sprite2D" unique_id=720239746]
+scale = Vector2(2, 2)
 texture = ExtResource("1_a1u8t")
 hframes = 3
 script = ExtResource("2_a1u8t")

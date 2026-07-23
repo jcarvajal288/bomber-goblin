@@ -83,6 +83,7 @@ animations = [{
 
 [node name="SmallExplosion" type="AnimatedSprite2D" unique_id=782473924]
 z_index = 6
+scale = Vector2(2, 2)
 sprite_frames = SubResource("SpriteFrames_1w6l7")
 autoplay = "default"
 script = ExtResource("2_077hr")

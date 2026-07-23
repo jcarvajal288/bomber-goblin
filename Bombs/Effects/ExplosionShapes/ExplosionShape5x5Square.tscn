@@ -9,73 +9,73 @@ script = ExtResource("1_bnq4i")
 [node name="ExplosionAreaTile" parent="." unique_id=720239746 instance=ExtResource("2_wea7q")]
 
 [node name="ExplosionAreaTile2" parent="." unique_id=547166873 instance=ExtResource("2_wea7q")]
-position = Vector2(-16, -16)
+position = Vector2(-32, -32)
 
 [node name="ExplosionAreaTile3" parent="." unique_id=1516100009 instance=ExtResource("2_wea7q")]
-position = Vector2(-8, -8)
+position = Vector2(-16, -16)
 
 [node name="ExplosionAreaTile4" parent="." unique_id=1876009831 instance=ExtResource("2_wea7q")]
-position = Vector2(-16, 16)
+position = Vector2(-32, 32)
 
 [node name="ExplosionAreaTile5" parent="." unique_id=1585638559 instance=ExtResource("2_wea7q")]
-position = Vector2(-8, 8)
+position = Vector2(-16, 16)
 
 [node name="ExplosionAreaTile6" parent="." unique_id=1340328796 instance=ExtResource("2_wea7q")]
-position = Vector2(16, -16)
+position = Vector2(32, -32)
 
 [node name="ExplosionAreaTile7" parent="." unique_id=1200317157 instance=ExtResource("2_wea7q")]
-position = Vector2(8, -8)
+position = Vector2(16, -16)
 
 [node name="ExplosionAreaTile8" parent="." unique_id=1235757717 instance=ExtResource("2_wea7q")]
-position = Vector2(8, 8)
-
-[node name="ExplosionAreaTile9" parent="." unique_id=1722527917 instance=ExtResource("2_wea7q")]
 position = Vector2(16, 16)
 
+[node name="ExplosionAreaTile9" parent="." unique_id=1722527917 instance=ExtResource("2_wea7q")]
+position = Vector2(32, 32)
+
 [node name="ExplosionAreaTile10" parent="." unique_id=413637136 instance=ExtResource("2_wea7q")]
-position = Vector2(16, 0)
+position = Vector2(32, 0)
 
 [node name="ExplosionAreaTile13" parent="." unique_id=727543677 instance=ExtResource("2_wea7q")]
-position = Vector2(16, 8)
+position = Vector2(32, 16)
 
 [node name="ExplosionAreaTile14" parent="." unique_id=2061487896 instance=ExtResource("2_wea7q")]
-position = Vector2(8, 16)
+position = Vector2(16, 32)
 
 [node name="ExplosionAreaTile15" parent="." unique_id=1499678930 instance=ExtResource("2_wea7q")]
-position = Vector2(0, 16)
+position = Vector2(0, 32)
 
 [node name="ExplosionAreaTile16" parent="." unique_id=901200377 instance=ExtResource("2_wea7q")]
-position = Vector2(-8, 16)
+position = Vector2(-16, 32)
 
 [node name="ExplosionAreaTile18" parent="." unique_id=1595849259 instance=ExtResource("2_wea7q")]
-position = Vector2(-16, -8)
+position = Vector2(-32, -16)
 
 [node name="ExplosionAreaTile22" parent="." unique_id=1017624734 instance=ExtResource("2_wea7q")]
-position = Vector2(8, -16)
+position = Vector2(16, -32)
 
 [node name="ExplosionAreaTile23" parent="." unique_id=458976275 instance=ExtResource("2_wea7q")]
-position = Vector2(0, -16)
+position = Vector2(0, -32)
 
 [node name="ExplosionAreaTile24" parent="." unique_id=779308287 instance=ExtResource("2_wea7q")]
-position = Vector2(-8, -16)
+position = Vector2(-16, -32)
 
 [node name="ExplosionAreaTile25" parent="." unique_id=1048747490 instance=ExtResource("2_wea7q")]
-position = Vector2(0, -8)
+position = Vector2(0, -16)
 
 [node name="ExplosionAreaTile19" parent="." unique_id=30226666 instance=ExtResource("2_wea7q")]
-position = Vector2(-16, 0)
+position = Vector2(-32, 0)
 
 [node name="ExplosionAreaTile20" parent="." unique_id=181892298 instance=ExtResource("2_wea7q")]
-position = Vector2(-8, 0)
+position = Vector2(-16, 0)
 
 [node name="ExplosionAreaTile21" parent="." unique_id=2063545276 instance=ExtResource("2_wea7q")]
-position = Vector2(-16, 8)
+position = Vector2(-32, 16)
 
 [node name="ExplosionAreaTile17" parent="." unique_id=647483950 instance=ExtResource("2_wea7q")]
-position = Vector2(0, 8)
+position = Vector2(0, 16)
 
 [node name="ExplosionAreaTile11" parent="." unique_id=1958268231 instance=ExtResource("2_wea7q")]
-position = Vector2(16, -8)
+position = Vector2(32, -16)
 
 [node name="ExplosionAreaTile12" parent="." unique_id=1674476659 instance=ExtResource("2_wea7q")]
-position = Vector2(8, 0)
+position = Vector2(16, 0)

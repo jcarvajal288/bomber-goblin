@@ -37,16 +37,16 @@ func set_new_bomb_shape() -> void:
 func _spawn_bomb(bomb_position: Vector2) -> void:
 	var player_position = Global.player.global_position
 	var bomb = BLACK_BOMB_SCENE.instantiate()
-	var grid_x = snapped(bomb_position.x, 8)
-	var grid_y = snapped(bomb_position.y, 8)
+	var grid_x = snapped(bomb_position.x, Global.TILE_SIZE)
+	var grid_y = snapped(bomb_position.y, Global.TILE_SIZE)
 	if (grid_x <= player_position.x):
-		grid_x += 4
+		grid_x += Global.TILE_SIZE / 2.0
 	else:
-		grid_x -= 4
+		grid_x -= Global.TILE_SIZE / 2.0
 	if (grid_y <= player_position.y):
-		grid_y += 4
+		grid_y += Global.TILE_SIZE / 2.0
 	else:
-		grid_y -= 4
+		grid_y -= Global.TILE_SIZE / 2.0
 	var grid_snapped = Vector2(grid_x, grid_y)
 	bomb.global_position = grid_snapped
 	var explosion_shape = explosion_shapes[next_bomb_shape].instantiate()

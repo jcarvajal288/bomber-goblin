@@ -4,7 +4,7 @@
 [ext_resource type="Texture2D" uid="uid://yfdcpsxgevxp" path="res://Bombs/_art/BlackBomb.png" id="2_084xw"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_fuhmt"]
-radius = 3.0
+radius = 7.0
 
 [node name="BlackBomb" type="StaticBody2D" unique_id=55399885]
 collision_layer = 2
@@ -13,6 +13,7 @@ script = ExtResource("1_dvqo8")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=1196730902]
 z_index = 1
+scale = Vector2(2, 2)
 texture = ExtResource("2_084xw")
 hframes = 9
 

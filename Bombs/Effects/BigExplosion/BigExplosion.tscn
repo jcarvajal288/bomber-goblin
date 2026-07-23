@@ -83,6 +83,7 @@ animations = [{
 
 [node name="BigExplosion" type="AnimatedSprite2D" unique_id=1316088288]
 z_index = 7
+scale = Vector2(2, 2)
 sprite_frames = SubResource("SpriteFrames_s3h38")
 autoplay = "default"
 frame_progress = 0.8614496

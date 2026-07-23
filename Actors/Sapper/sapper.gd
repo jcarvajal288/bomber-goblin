@@ -1,6 +1,6 @@
 class_name Sapper extends CharacterBody2D
 
-const speed = 40
+const speed = 80
 
 var has_exploded: bool = false
 

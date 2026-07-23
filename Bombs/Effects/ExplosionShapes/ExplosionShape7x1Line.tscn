@@ -9,19 +9,19 @@ script = ExtResource("1_0mdyc")
 [node name="ExplosionAreaTile" parent="." unique_id=720239746 instance=ExtResource("2_q3fuc")]
 
 [node name="ExplosionAreaTile2" parent="." unique_id=547166873 instance=ExtResource("2_q3fuc")]
-position = Vector2(-16, 0)
+position = Vector2(-32, 0)
 
 [node name="ExplosionAreaTile3" parent="." unique_id=1516100009 instance=ExtResource("2_q3fuc")]
-position = Vector2(-24, 0)
+position = Vector2(-48, 0)
 
 [node name="ExplosionAreaTile6" parent="." unique_id=1340328796 instance=ExtResource("2_q3fuc")]
-position = Vector2(24, 0)
+position = Vector2(48, 0)
 
 [node name="ExplosionAreaTile7" parent="." unique_id=1200317157 instance=ExtResource("2_q3fuc")]
-position = Vector2(-8, 0)
+position = Vector2(-16, 0)
 
 [node name="ExplosionAreaTile8" parent="." unique_id=1235757717 instance=ExtResource("2_q3fuc")]
-position = Vector2(8, 0)
+position = Vector2(16, 0)
 
 [node name="ExplosionAreaTile9" parent="." unique_id=1722527917 instance=ExtResource("2_q3fuc")]
-position = Vector2(16, 0)
+position = Vector2(32, 0)
