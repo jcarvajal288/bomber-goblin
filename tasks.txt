@@ -28,8 +28,8 @@ x simple destructable and scorable object
 x multiply scores by bomb explode count
 x add chest objects
 x melee chase enemy (dwarf fighter)
+x explosive barrel (3x3 explosion shape)
 _ dwarf fighter can kill the player
-_ explosive barrel (3x3 explosion shape)
 
 
 NOTES

@@ -8,7 +8,7 @@
 [ext_resource type="PackedScene" uid="uid://dpjj5e11bqe1v" path="res://Objects/Chests/Chest4/Chest4.tscn" id="6_0tpqj"]
 [ext_resource type="PackedScene" uid="uid://bokrn6chgjn5s" path="res://Objects/Chests/Chest5/Chest5.tscn" id="7_sn2cg"]
 [ext_resource type="PackedScene" uid="uid://cgk1uh86fxvlp" path="res://Objects/Chests/Chest6/Chest6.tscn" id="8_bgvdb"]
-[ext_resource type="PackedScene" uid="uid://4h4cxqh8tc2" path="res://Actors/DwarfFighter/DwarfFighter.tscn" id="9_nghqs"]
+[ext_resource type="PackedScene" uid="uid://c36nc13sokl4x" path="res://Objects/Barrel/RedBarrel.tscn" id="10_0tpqj"]
 
 [node name="Level1" type="Node2D" unique_id=2145577900]
 
@@ -50,5 +50,5 @@ position = Vector2(385, 138)
 [node name="Chest6" parent="." unique_id=990247676 instance=ExtResource("8_bgvdb")]
 position = Vector2(433, 138)
 
-[node name="DwarfFighter" parent="." unique_id=1536819497 instance=ExtResource("9_nghqs")]
-position = Vector2(231, 263)
+[node name="RedBarrel" parent="." unique_id=954294770 instance=ExtResource("10_0tpqj")]
+position = Vector2(169, 120)

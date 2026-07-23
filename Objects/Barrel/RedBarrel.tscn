@@ -1,0 +1,25 @@
+[gd_scene format=3 uid="uid://c36nc13sokl4x"]
+
+[ext_resource type="Script" uid="uid://ct1kbdpipa7qu" path="res://Objects/Barrel/red_barrel.gd" id="1_jlnac"]
+[ext_resource type="Texture2D" uid="uid://vj2s7233v6w" path="res://Objects/Barrel/_art/red_barrel.png" id="2_6afg1"]
+[ext_resource type="Resource" uid="uid://c6uwd4hculc4m" path="res://Objects/Barrel/red_barrel_data.tres" id="2_p0dcd"]
+[ext_resource type="PackedScene" uid="uid://b1831skdtd6i7" path="res://Bombs/Effects/ExplosionShapes/ExplosionShape3x3Square.tscn" id="4_xyp0g"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_p6ya2"]
+radius = 6.0
+height = 18.0
+
+[node name="RedBarrel" type="StaticBody2D" unique_id=954294770]
+script = ExtResource("1_jlnac")
+data = ExtResource("2_p0dcd")
+metadata/_custom_type_script = "uid://dtopctfuadv65"
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=326565448]
+scale = Vector2(2, 2)
+texture = ExtResource("2_6afg1")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=597719149]
+shape = SubResource("CapsuleShape2D_p6ya2")
+
+[node name="ExplosionShape3x3Square" parent="." unique_id=733002243 instance=ExtResource("4_xyp0g")]
+visible = false
