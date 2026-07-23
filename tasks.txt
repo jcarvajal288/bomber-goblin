@@ -28,6 +28,7 @@ x simple destructable and scorable object
 x multiply scores by bomb explode count
 x add chest objects
 _ melee chase enemy
+_ explosive barrel (3x3 explosion shape)
 
 
 NOTES
