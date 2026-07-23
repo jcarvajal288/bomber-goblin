@@ -25,6 +25,7 @@ x display score
     x score, chest count, level timer, enemy timer
 x press Z button to cycle explosion shape
 _ simple destructable and scorable object
+_ multiply scores by bomb explode count
 _ melee chase enemy
 
 
