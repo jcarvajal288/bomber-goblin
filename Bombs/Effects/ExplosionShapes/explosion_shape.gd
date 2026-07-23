@@ -26,7 +26,18 @@ func _process(delta: float) -> void:
 		explosion_finished.emit()
 	
 
+func can_see_center(node: Node2D) -> bool:
+	var space_state = get_world_2d().direct_space_state
+	var query = PhysicsRayQueryParameters2D.create(node.global_position, global_position)
+	query.collision_mask = 1
+	var result = space_state.intersect_ray(query)
+	return result.is_empty()
+	
+
 
 func explode(multiplier: int) -> void:
 	for child in get_children():
-		child.explode(multiplier)
+		if can_see_center(child):
+			child.explode(multiplier)
+		else:
+			child.queue_free()

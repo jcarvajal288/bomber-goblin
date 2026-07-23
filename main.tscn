@@ -11,7 +11,7 @@ script = ExtResource("1_lquwl")
 
 [node name="Sapper" parent="." unique_id=1352799463 instance=ExtResource("1_ig7tw")]
 z_index = 5
-position = Vector2(240, 160)
+position = Vector2(80.015, 160)
 
 [node name="Camera2D" type="Camera2D" parent="Sapper" unique_id=910537265]
 
