@@ -1,0 +1,27 @@
+[gd_scene format=3 uid="uid://djujfdq5pb2bh"]
+
+[ext_resource type="Script" uid="uid://b2lnitmvfpews" path="res://Bombs/Effects/ExplosionAreas/explosion_area.gd" id="1_byowd"]
+[ext_resource type="PackedScene" uid="uid://cs4g4aox0xt03" path="res://Bombs/Effects/ExplosionAreas/ExplosionAreaTile/ExplosionAreaTile.tscn" id="2_ctnp1"]
+
+[node name="ExplosionArea1x7Line" type="Node2D" unique_id=34019860]
+script = ExtResource("1_byowd")
+
+[node name="ExplosionAreaTile" parent="." unique_id=720239746 instance=ExtResource("2_ctnp1")]
+
+[node name="ExplosionAreaTile2" parent="." unique_id=547166873 instance=ExtResource("2_ctnp1")]
+position = Vector2(0, -16)
+
+[node name="ExplosionAreaTile3" parent="." unique_id=1516100009 instance=ExtResource("2_ctnp1")]
+position = Vector2(0, -8)
+
+[node name="ExplosionAreaTile6" parent="." unique_id=1340328796 instance=ExtResource("2_ctnp1")]
+position = Vector2(0, 24)
+
+[node name="ExplosionAreaTile7" parent="." unique_id=1200317157 instance=ExtResource("2_ctnp1")]
+position = Vector2(0, -24)
+
+[node name="ExplosionAreaTile8" parent="." unique_id=1235757717 instance=ExtResource("2_ctnp1")]
+position = Vector2(0, 8)
+
+[node name="ExplosionAreaTile9" parent="." unique_id=1722527917 instance=ExtResource("2_ctnp1")]
+position = Vector2(0, 16)

@@ -23,4 +23,4 @@ func tick_down() -> void:
 
 func explode() -> void:
 	Global.spawn_big_explosion.emit(global_position)
-	$ExplosionArea3x3.explode()
+	explosion_area.explode()

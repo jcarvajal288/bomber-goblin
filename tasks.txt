@@ -12,11 +12,12 @@ x bombs spawn snapped to grid
 x make 3x3 explosion area
 x explosion areas pulse in and out
 x explosions kill the player
-_ make different explosion areas
+x make different explosion areas
     x 3x3 square 
-    _ 5x5 cross 
-    _ 5x5 X 
-    _ 5x5 square 
-    _ 7x1 line
-    _ 1x7 line
+    x 5x5 cross 
+    x 5x5 X 
+    x 5x5 square 
+    x 7x1 line
+    x 1x7 line
+_ randomly select from explosion areas for each bomb
 _ make explosion shape preview window
