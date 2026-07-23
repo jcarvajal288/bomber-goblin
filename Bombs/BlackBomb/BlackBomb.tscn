@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" uid="uid://bhgi38jd1j6fj" path="res://Bombs/BlackBomb/black_bomb.gd" id="1_dvqo8"]
 [ext_resource type="Texture2D" uid="uid://yfdcpsxgevxp" path="res://Bombs/_art/BlackBomb.png" id="2_084xw"]
-[ext_resource type="PackedScene" uid="uid://b1831skdtd6i7" path="res://Bombs/Effects/ExplosionAreas/ExplosionArea3x3/ExplosionArea3x3.tscn" id="3_084xw"]
+[ext_resource type="PackedScene" uid="uid://b1831skdtd6i7" path="res://Bombs/Effects/ExplosionAreas/ExplosionArea3x3.tscn" id="3_084xw"]
 
 [node name="BlackBomb" type="Node2D" unique_id=1165797410 node_paths=PackedStringArray("explosion_area")]
 script = ExtResource("1_dvqo8")

@@ -12,8 +12,11 @@ x bombs spawn snapped to grid
 x make 3x3 explosion area
 x explosion areas pulse in and out
 x explosions kill the player
-_ make different color bombs with different explosion areas
-    x 3x3 square - black
-    _ 5x5 cross - blue
-    _ 5x5 X - green
-    _ 5x5 square - red
+_ make different explosion areas
+    x 3x3 square 
+    _ 5x5 cross 
+    _ 5x5 X 
+    _ 5x5 square 
+    _ 7x1 line
+    _ 1x7 line
+_ make explosion shape preview window

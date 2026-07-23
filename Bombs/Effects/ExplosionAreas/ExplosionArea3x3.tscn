@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://b1831skdtd6i7"]
 
-[ext_resource type="Script" uid="uid://b2lnitmvfpews" path="res://Bombs/Effects/ExplosionAreas/ExplosionArea3x3/explosion_area_3x_3.gd" id="1_yibyd"]
+[ext_resource type="Script" uid="uid://b2lnitmvfpews" path="res://Bombs/Effects/ExplosionAreas/explosion_area.gd" id="1_yibyd"]
 [ext_resource type="PackedScene" uid="uid://cs4g4aox0xt03" path="res://Bombs/Effects/ExplosionAreas/ExplosionAreaTile/ExplosionAreaTile.tscn" id="2_xy18n"]
 
 [node name="ExplosionArea3x3" type="Node2D" unique_id=733002243]
