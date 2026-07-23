@@ -1,0 +1,6 @@
+[gd_scene format=3 uid="uid://jnq1djtk2fdn"]
+
+[ext_resource type="Script" uid="uid://cvnlxefa3j5vv" path="res://Objects/Chests/Chest1/chest_1.gd" id="1_c8p6k"]
+
+[node name="Chest1" type="StaticBody2D" unique_id=1213911392]
+script = ExtResource("1_c8p6k")

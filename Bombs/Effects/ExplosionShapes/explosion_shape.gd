@@ -27,6 +27,6 @@ func _process(delta: float) -> void:
 	
 
 
-func explode() -> void:
+func explode(multiplier: int) -> void:
 	for child in get_children():
-		child.explode()
+		child.explode(multiplier)

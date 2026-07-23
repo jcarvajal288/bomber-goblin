@@ -1,6 +1,6 @@
 class_name BlackBomb extends StaticBody2D
 
-const BASE_SCORE = 50
+@export var data: Resource
 
 var explosion_shape: Node2D
 
@@ -24,15 +24,15 @@ func tick_down() -> void:
 		if $Sprite2D.frame == 3 or $Sprite2D.frame == 6:
 			explosion_shape.tick_up_color()
 	elif not has_exploded:
-		explode()
+		explode(0)
 
 
-func explode() -> void:
+func explode(multiplier: int) -> void:
 	has_exploded = true
 	Global.spawn_big_explosion.emit(global_position)
-	explosion_shape.explode()
-	ScoreTracker.add_score.emit(BASE_SCORE, global_position)
+	explosion_shape.explode(multiplier)
+	ScoreTracker.add_score.emit(data.base_value, global_position, multiplier)
 
 
-func on_explosion() -> void:
-	explode()
+func on_explosion(multiplier: int) -> void:
+	explode(multiplier + 1)

@@ -17,5 +17,5 @@ func drop_bomb() -> void:
 		Global.spawn_bomb.emit(global_position)
 
 
-func on_explosion() -> void:
+func on_explosion(_multiplier: int) -> void:
 	$StateMachine.change_state($StateMachine/Die)
