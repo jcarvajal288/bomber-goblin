@@ -3,7 +3,7 @@ extends State
 
 func enter() -> void:
 	super()
-	subject.is_alive = false
+	subject.has_exploded = true
 
 
 func process_frame(_delta: float) -> State:

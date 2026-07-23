@@ -2,7 +2,7 @@ class_name Sapper extends CharacterBody2D
 
 const speed = 40
 
-var is_alive: bool = true
+var has_exploded: bool = false
 
 
 func _ready() -> void:
@@ -13,7 +13,7 @@ func _ready() -> void:
 
 
 func drop_bomb() -> void:
-	if is_alive:
+	if not has_exploded:
 		Global.spawn_bomb.emit(global_position)
 
 

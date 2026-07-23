@@ -3,13 +3,21 @@
 [ext_resource type="Script" uid="uid://bhgi38jd1j6fj" path="res://Bombs/BlackBomb/black_bomb.gd" id="1_dvqo8"]
 [ext_resource type="Texture2D" uid="uid://yfdcpsxgevxp" path="res://Bombs/_art/BlackBomb.png" id="2_084xw"]
 
-[node name="BlackBomb" type="Node2D" unique_id=1165797410]
+[sub_resource type="CircleShape2D" id="CircleShape2D_fuhmt"]
+radius = 4.0
+
+[node name="BlackBomb" type="StaticBody2D" unique_id=55399885]
+collision_layer = 2
+collision_mask = 2
 script = ExtResource("1_dvqo8")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=1196730902]
 z_index = 1
 texture = ExtResource("2_084xw")
 hframes = 9
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=976248970]
+shape = SubResource("CircleShape2D_fuhmt")
 
 [node name="Timer" type="Timer" parent="." unique_id=1583913750]
 autostart = true

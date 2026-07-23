@@ -1,4 +1,4 @@
-extends Node2D
+class_name BlackBomb extends StaticBody2D
 
 var explosion_area: Node2D
 
@@ -24,9 +24,13 @@ func tick_down() -> void:
 			explosion_area.tick_up_color()
 	elif not has_exploded:
 		explode()
-		has_exploded = true
 
 
 func explode() -> void:
+	has_exploded = true
 	Global.spawn_big_explosion.emit(global_position)
 	explosion_area.explode()
+
+
+func on_explosion() -> void:
+	explode()
