@@ -2,6 +2,7 @@
 
 [ext_resource type="Texture2D" uid="uid://clvr80ytkroao" path="res://Actors/DwarfFighter/_art/Figther_Idle.png" id="1_ccgmi"]
 [ext_resource type="Script" uid="uid://dbgn0hhrvhdl3" path="res://Actors/DwarfFighter/dwarf_fighter.gd" id="1_m6nn1"]
+[ext_resource type="Resource" uid="uid://crxskq5q1fwj4" path="res://Actors/DwarfFighter/dwarf_fighter_data.tres" id="2_1enln"]
 [ext_resource type="Texture2D" uid="uid://w7adpt5py0y8" path="res://Actors/DwarfFighter/_art/Figther_Attack.png" id="2_deftg"]
 [ext_resource type="Script" uid="uid://cjcwdbe2ny4mi" path="res://Actors/Components/animation_player.gd" id="2_qj23a"]
 [ext_resource type="Texture2D" uid="uid://dav5gneghpfqg" path="res://Actors/DwarfFighter/_art/Figther_walk.png" id="2_qpj02"]
@@ -784,6 +785,7 @@ radius = 5.0990195
 
 [node name="DwarfFighter" type="CharacterBody2D" unique_id=1536819497]
 script = ExtResource("1_m6nn1")
+data = ExtResource("2_1enln")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=2020589377]
 scale = Vector2(2, 2)
@@ -800,7 +802,8 @@ script = ExtResource("2_qj23a")
 scale = Vector2(2, 2)
 shape = SubResource("CircleShape2D_fuhmt")
 
-[node name="ChaseDirector" parent="." unique_id=1022971343 instance=ExtResource("7_ynjuc")]
+[node name="ChaseDirector" parent="." unique_id=1022971343 node_paths=PackedStringArray("subject") instance=ExtResource("7_ynjuc")]
+subject = NodePath("..")
 
 [node name="StateMachine" type="Node" parent="." unique_id=1790917844 node_paths=PackedStringArray("director", "animation_player", "starting_state")]
 script = ExtResource("8_d8mer")
