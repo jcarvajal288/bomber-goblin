@@ -1,0 +1,7 @@
+[gd_resource type="LabelSettings" format=3 uid="uid://b4wb1wq4ajlrd"]
+
+[ext_resource type="FontFile" uid="uid://oygny1aq118x" path="res://UI/_fonts/High_Birth.ttf" id="1_gu5tn"]
+
+[resource]
+font = ExtResource("1_gu5tn")
+font_size = 9

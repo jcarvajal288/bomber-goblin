@@ -28,3 +28,7 @@ signal spawn_small_explosion(explosion_position: Vector2)
 
 func wait_for_sec(secs: float) -> void:
 	await get_tree().create_timer(secs).timeout
+
+
+var score: int = 0
+var chests: int = 0

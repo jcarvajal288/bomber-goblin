@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://vtrtgf17vece"]
 
 [ext_resource type="Texture2D" uid="uid://wou2i27juha7" path="res://UI/_art/UI_Frame.png" id="1_75xa8"]
+[ext_resource type="LabelSettings" uid="uid://b4wb1wq4ajlrd" path="res://UI/_fonts/high_birth_label_settings.tres" id="2_diwxs"]
 [ext_resource type="PackedScene" uid="uid://doronur15uvhu" path="res://UI/BombPreview/BombPreview.tscn" id="2_qlmyq"]
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_r0tkx"]
@@ -20,17 +21,69 @@ size_flags_horizontal = 8
 size_flags_vertical = 0
 theme_override_styles/panel = SubResource("StyleBoxEmpty_r0tkx")
 
-[node name="TextureRect" type="TextureRect" parent="PanelContainer" unique_id=820908888]
+[node name="FrameTextureRect" type="TextureRect" parent="PanelContainer" unique_id=820908888]
 layout_mode = 2
 texture = ExtResource("1_75xa8")
 stretch_mode = 2
 
-[node name="MarginContainer" type="MarginContainer" parent="PanelContainer" unique_id=1224547209]
+[node name="ScoreMarginContainer" type="MarginContainer" parent="PanelContainer" unique_id=486195320]
+layout_mode = 2
+theme_override_constants/margin_left = 68
+theme_override_constants/margin_top = 18
+
+[node name="ScoreLabel" type="Label" parent="PanelContainer/ScoreMarginContainer" unique_id=879861496]
+z_index = 1
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 0
+text = "0000000"
+label_settings = ExtResource("2_diwxs")
+horizontal_alignment = 2
+
+[node name="ChestsMarginContainer" type="MarginContainer" parent="PanelContainer" unique_id=2115558018]
+z_index = 1
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 0
+theme_override_constants/margin_left = 187
+theme_override_constants/margin_top = 18
+
+[node name="ChestsLabel" type="Label" parent="PanelContainer/ChestsMarginContainer" unique_id=1386578466]
+layout_mode = 2
+size_flags_horizontal = 0
+text = "00"
+label_settings = ExtResource("2_diwxs")
+
+[node name="TimerMarginContainer" type="MarginContainer" parent="PanelContainer" unique_id=1990184393]
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 0
+theme_override_constants/margin_left = 263
+theme_override_constants/margin_top = 18
+
+[node name="TimerLabel" type="Label" parent="PanelContainer/TimerMarginContainer" unique_id=873690629]
+layout_mode = 2
+text = "000"
+label_settings = ExtResource("2_diwxs")
+
+[node name="EnemyMarginContainer" type="MarginContainer" parent="PanelContainer" unique_id=1393726899]
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 0
+theme_override_constants/margin_left = 352
+theme_override_constants/margin_top = 18
+
+[node name="EnemyLabel" type="Label" parent="PanelContainer/EnemyMarginContainer" unique_id=352654267]
+layout_mode = 2
+text = "00"
+label_settings = ExtResource("2_diwxs")
+
+[node name="BombPreviewMarginContainer" type="MarginContainer" parent="PanelContainer" unique_id=1224547209]
 layout_mode = 2
 theme_override_constants/margin_right = 12
 theme_override_constants/margin_bottom = 8
 
-[node name="BombPreview" parent="PanelContainer/MarginContainer" unique_id=926210204 instance=ExtResource("2_qlmyq")]
+[node name="BombPreview" parent="PanelContainer/BombPreviewMarginContainer" unique_id=926210204 instance=ExtResource("2_qlmyq")]
 layout_mode = 2
 size_flags_horizontal = 8
 size_flags_vertical = 8
