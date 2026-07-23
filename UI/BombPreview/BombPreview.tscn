@@ -3,33 +3,15 @@
 [ext_resource type="Script" uid="uid://b3jcoia2dod72" path="res://UI/BombPreview/bomb_preview.gd" id="1_ady53"]
 [ext_resource type="Texture2D" uid="uid://bi4bhgpmcu3nf" path="res://UI/_art/BombPreviewIcons_medium.png" id="2_ady53"]
 
-[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_lquwl"]
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_7mycd"]
+[sub_resource type="AtlasTexture" id="AtlasTexture_fuhmt"]
 atlas = ExtResource("2_ady53")
-region = Rect2(0, 0, 41, 35)
-margin = Rect2(-1, -1, 0, 0)
+region = Rect2(0, 0, 56, 56)
 
-[node name="BombPreview" type="MarginContainer" unique_id=2097762680]
-anchors_preset = 3
-anchor_left = 1.0
-anchor_top = 1.0
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 0
-grow_vertical = 0
-size_flags_horizontal = 8
-size_flags_vertical = 8
+[node name="BombPreview" type="TextureRect" unique_id=926210204]
+custom_minimum_size = Vector2(56, 56)
+offset_right = 40.0
+offset_bottom = 40.0
+texture = SubResource("AtlasTexture_fuhmt")
+expand_mode = 1
+stretch_mode = 5
 script = ExtResource("1_ady53")
-
-[node name="PanelContainer" type="PanelContainer" parent="." unique_id=820889855]
-custom_minimum_size = Vector2(41, 35)
-layout_mode = 2
-size_flags_horizontal = 8
-size_flags_vertical = 8
-theme_override_styles/panel = SubResource("StyleBoxEmpty_lquwl")
-
-[node name="TextureRect" type="TextureRect" parent="PanelContainer" unique_id=217686429]
-texture_filter = 1
-layout_mode = 2
-texture = SubResource("AtlasTexture_7mycd")
