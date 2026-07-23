@@ -31,7 +31,7 @@ func explode() -> void:
 	has_exploded = true
 	Global.spawn_big_explosion.emit(global_position)
 	explosion_shape.explode()
-	Global.score += BASE_SCORE
+	ScoreTracker.add_score.emit(BASE_SCORE, global_position)
 
 
 func on_explosion() -> void:

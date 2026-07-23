@@ -14,7 +14,7 @@ func _ready() -> void:
 func explode() -> void:
 	has_exploded = true
 	Global.spawn_big_explosion.emit(global_position)
-	Global.score += BASE_SCORE
+	ScoreTracker.add_score.emit(BASE_SCORE, global_position)
 	queue_free()
 
 

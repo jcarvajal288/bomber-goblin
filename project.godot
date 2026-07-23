@@ -18,6 +18,7 @@ config/icon="res://icon.svg"
 [autoload]
 
 Global="*uid://cmhshwp0gcu10"
+ScoreTracker="*uid://cu820kg3fdcvh"
 
 [display]
 

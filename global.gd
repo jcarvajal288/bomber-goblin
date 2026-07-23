@@ -10,6 +10,7 @@ enum RenderOrder {
 	INDICATOR = 3,
 	ITEM = 4,
 	PLAYER = 5,
+	SCORE_TOAST = 10
 }
 
 enum CollisionLayer {
@@ -30,5 +31,4 @@ func wait_for_sec(secs: float) -> void:
 	await get_tree().create_timer(secs).timeout
 
 
-var score: int = 0
 var chests_left: int = 0

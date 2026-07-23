@@ -1,0 +1,9 @@
+[gd_scene format=3 uid="uid://cgfteu0y2jjtk"]
+
+[ext_resource type="LabelSettings" uid="uid://b4wb1wq4ajlrd" path="res://UI/_fonts/high_birth_label_settings.tres" id="1_wrhtg"]
+[ext_resource type="Script" uid="uid://mekkg6xmav5y" path="res://UI/ScoreToast/score_toast.gd" id="2_eggot"]
+
+[node name="ScoreToast" type="Label" unique_id=1185768053]
+label_settings = ExtResource("1_wrhtg")
+horizontal_alignment = 1
+script = ExtResource("2_eggot")
