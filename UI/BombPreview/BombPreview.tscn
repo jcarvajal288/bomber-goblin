@@ -1,5 +1,6 @@
 [gd_scene format=3 uid="uid://doronur15uvhu"]
 
+[ext_resource type="Script" uid="uid://b3jcoia2dod72" path="res://UI/BombPreview/bomb_preview.gd" id="1_ady53"]
 [ext_resource type="Texture2D" uid="uid://cdcbu1lwgthyo" path="res://UI/_art/BombPreviewWindows.png" id="1_ite7i"]
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_lquwl"]
@@ -18,6 +19,7 @@ grow_horizontal = 0
 grow_vertical = 0
 size_flags_horizontal = 8
 size_flags_vertical = 8
+script = ExtResource("1_ady53")
 
 [node name="PanelContainer" type="PanelContainer" parent="." unique_id=820889855]
 custom_minimum_size = Vector2(49, 49)

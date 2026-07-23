@@ -9,7 +9,7 @@
 
 [node name="Sapper" parent="." unique_id=1352799463 instance=ExtResource("1_ig7tw")]
 z_index = 5
-position = Vector2(117, 84)
+position = Vector2(120.07, 80.225)
 
 [node name="Camera2D" type="Camera2D" parent="Sapper" unique_id=910537265]
 

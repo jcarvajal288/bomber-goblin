@@ -20,9 +20,11 @@ var explosion_areas = [
 	EA_7X1_LINE,
 ]
 
+var next_bomb_area = 0;
+
 
 func _ready() -> void:
-	randomize()
+	next_bomb_area = randi_range(0, len(explosion_areas) - 1)
 	Global.spawn_bomb.connect(_spawn_bomb)
 	Global.spawn_big_explosion.connect(_spawn_big_explosion)
 	Global.spawn_small_explosion.connect(_spawn_small_explosion)
@@ -43,9 +45,11 @@ func _spawn_bomb(bomb_position: Vector2) -> void:
 		grid_y -= 4
 	var grid_snapped = Vector2(grid_x, grid_y)
 	bomb.global_position = grid_snapped
-	var explosion_area = explosion_areas.pick_random().instantiate()
+	var explosion_area = explosion_areas[next_bomb_area].instantiate()
 	bomb.set_explosion_area(explosion_area)
 	add_child(bomb)
+	next_bomb_area = randi_range(0, len(explosion_areas) - 1)
+	Global.signal_next_bomb_area.emit(next_bomb_area)
 
 
 func _spawn_big_explosion(bomb_position: Vector2) -> void:
