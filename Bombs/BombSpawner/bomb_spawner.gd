@@ -13,21 +13,25 @@ const EA_7X1_LINE = preload("res://Bombs/Effects/ExplosionShapes/ExplosionShape7
 
 var explosion_shapes = [
 	EA_1X7_LINE,
-	EA_3X3_SQUARE,
-	EA_5X5_CROSS,
-	EA_5X5_SQUARE,
-	EA_5X5_X,
 	EA_7X1_LINE,
+	EA_3X3_SQUARE,
+	EA_5X5_SQUARE,
+	EA_5X5_CROSS,
+	EA_5X5_X,
 ]
 
 var next_bomb_shape = 0;
 
 
 func _ready() -> void:
-	next_bomb_shape = randi_range(0, len(explosion_shapes) - 1)
 	Global.spawn_bomb.connect(_spawn_bomb)
 	Global.spawn_big_explosion.connect(_spawn_big_explosion)
 	Global.spawn_small_explosion.connect(_spawn_small_explosion)
+
+
+func set_new_bomb_shape() -> void:
+	next_bomb_shape = randi_range(0, len(explosion_shapes) - 1)
+	Global.signal_next_bomb_shape.emit(next_bomb_shape)
 
 
 func _spawn_bomb(bomb_position: Vector2) -> void:
@@ -48,8 +52,7 @@ func _spawn_bomb(bomb_position: Vector2) -> void:
 	var explosion_shape = explosion_shapes[next_bomb_shape].instantiate()
 	bomb.set_explosion_shape(explosion_shape)
 	add_child(bomb)
-	next_bomb_shape = randi_range(0, len(explosion_shapes) - 1)
-	Global.signal_next_bomb_shape.emit(next_bomb_shape)
+	set_new_bomb_shape()
 
 
 func _spawn_big_explosion(bomb_position: Vector2) -> void:

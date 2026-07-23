@@ -1,11 +1,13 @@
 [gd_scene format=3 uid="uid://b2mv5djarnwqe"]
 
 [ext_resource type="PackedScene" uid="uid://bpj2g5ebv3n3y" path="res://Actors/Sapper/Sapper.tscn" id="1_ig7tw"]
+[ext_resource type="Script" uid="uid://bteyjq40tvdtc" path="res://main.gd" id="1_lquwl"]
 [ext_resource type="PackedScene" uid="uid://bo70h1oji36wg" path="res://Levels/MountainStronghold/Level1.tscn" id="2_0xm2m"]
 [ext_resource type="PackedScene" uid="uid://dqwy4kavgmryr" path="res://Bombs/BombSpawner/BombSpawner.tscn" id="3_h2yge"]
 [ext_resource type="PackedScene" uid="uid://doronur15uvhu" path="res://UI/BombPreview/BombPreview.tscn" id="4_1bvp3"]
 
 [node name="Main" type="Node2D" unique_id=352477210]
+script = ExtResource("1_lquwl")
 
 [node name="Sapper" parent="." unique_id=1352799463 instance=ExtResource("1_ig7tw")]
 z_index = 5
