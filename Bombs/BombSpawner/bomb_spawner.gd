@@ -4,8 +4,25 @@ const BLACK_BOMB_SCENE = preload("res://Bombs/BlackBomb/BlackBomb.tscn")
 const BIG_EXPLOSION_SCENE = preload("res://Bombs/Effects/BigExplosion/BigExplosion.tscn")
 const SMALL_EXPLOSION_SCENE = preload("res://Bombs/Effects/SmallExplosion/SmallExplosion.tscn")
 
+const EA_1X7_LINE = preload("res://Bombs/Effects/ExplosionAreas/ExplosionArea1x7Line.tscn")
+const EA_3X3_SQUARE = preload("res://Bombs/Effects/ExplosionAreas/ExplosionArea3x3Square.tscn")
+const EA_5X5_CROSS = preload("res://Bombs/Effects/ExplosionAreas/ExplosionArea5x5Cross.tscn")
+const EA_5X5_SQUARE = preload("res://Bombs/Effects/ExplosionAreas/ExplosionArea5x5Square.tscn")
+const EA_5X5_X = preload("res://Bombs/Effects/ExplosionAreas/ExplosionArea5x5X.tscn")
+const EA_7X1_LINE = preload("res://Bombs/Effects/ExplosionAreas/ExplosionArea7x1Line.tscn")
+
+var explosion_areas = [
+	EA_1X7_LINE,
+	EA_3X3_SQUARE,
+	EA_5X5_CROSS,
+	EA_5X5_SQUARE,
+	EA_5X5_X,
+	EA_7X1_LINE,
+]
+
 
 func _ready() -> void:
+	randomize()
 	Global.spawn_bomb.connect(_spawn_bomb)
 	Global.spawn_big_explosion.connect(_spawn_big_explosion)
 	Global.spawn_small_explosion.connect(_spawn_small_explosion)
@@ -26,6 +43,8 @@ func _spawn_bomb(bomb_position: Vector2) -> void:
 		grid_y -= 4
 	var grid_snapped = Vector2(grid_x, grid_y)
 	bomb.global_position = grid_snapped
+	var explosion_area = explosion_areas.pick_random().instantiate()
+	bomb.set_explosion_area(explosion_area)
 	add_child(bomb)
 
 

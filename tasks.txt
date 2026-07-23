@@ -19,5 +19,5 @@ x make different explosion areas
     x 5x5 square 
     x 7x1 line
     x 1x7 line
-_ randomly select from explosion areas for each bomb
+x randomly select from explosion areas for each bomb
 _ make explosion shape preview window

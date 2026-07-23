@@ -1,14 +1,20 @@
 extends Node2D
 
-@export var explosion_area: Node2D
+var explosion_area: Node2D
 
 var has_exploded = false
 
 
 func _ready() -> void:
 	$Timer.timeout.connect(tick_down)
-	explosion_area.explosion_finished.connect(queue_free)
 	z_index = Global.RenderOrder.ITEM
+
+
+func set_explosion_area(ea: Node2D) -> void:
+	explosion_area = ea
+	# explosion_area.global_position = global_position
+	explosion_area.explosion_finished.connect(queue_free)
+	add_child(explosion_area)
 
 
 func tick_down() -> void:
