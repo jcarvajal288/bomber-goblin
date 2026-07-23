@@ -1,15 +1,15 @@
 [gd_scene format=3 uid="uid://cs4g4aox0xt03"]
 
-[ext_resource type="Texture2D" uid="uid://c22aadjplegj5" path="res://Bombs/_art/BombAreaIndicators.png" id="1_2ftvj"]
-[ext_resource type="Script" uid="uid://blfrdkeadw3se" path="res://Bombs/Effects/ExplosionAreas/ExplosionAreaTile/explosion_area_tile.gd" id="2_lyhf4"]
+[ext_resource type="Texture2D" uid="uid://c22aadjplegj5" path="res://Bombs/_art/BombAreaIndicators.png" id="1_a1u8t"]
+[ext_resource type="Script" uid="uid://blfrdkeadw3se" path="res://Bombs/Effects/ExplosionShapes/ExplosionShapeTile/explosion_shape_tile.gd" id="2_a1u8t"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_fuhmt"]
 size = Vector2(8, 8)
 
-[node name="ExplosionAreaTile" type="Sprite2D" unique_id=720239746]
-texture = ExtResource("1_2ftvj")
+[node name="ExplosionShapeTile" type="Sprite2D" unique_id=720239746]
+texture = ExtResource("1_a1u8t")
 hframes = 3
-script = ExtResource("2_lyhf4")
+script = ExtResource("2_a1u8t")
 
 [node name="Area2D" type="Area2D" parent="." unique_id=607177598]
 collision_layer = 3

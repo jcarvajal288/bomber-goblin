@@ -1,6 +1,6 @@
 class_name BlackBomb extends StaticBody2D
 
-var explosion_area: Node2D
+var explosion_shape: Node2D
 
 var has_exploded = false
 
@@ -10,18 +10,18 @@ func _ready() -> void:
 	z_index = Global.RenderOrder.ITEM
 
 
-func set_explosion_area(ea: Node2D) -> void:
-	explosion_area = ea
-	# explosion_area.global_position = global_position
-	explosion_area.explosion_finished.connect(queue_free)
-	add_child(explosion_area)
+func set_explosion_shape(ea: Node2D) -> void:
+	explosion_shape = ea
+	# explosion_shape.global_position = global_position
+	explosion_shape.explosion_finished.connect(queue_free)
+	add_child(explosion_shape)
 
 
 func tick_down() -> void:
 	if $Sprite2D.frame < 8:
 		$Sprite2D.frame += 1
 		if $Sprite2D.frame == 3 or $Sprite2D.frame == 6:
-			explosion_area.tick_up_color()
+			explosion_shape.tick_up_color()
 	elif not has_exploded:
 		explode()
 
@@ -29,7 +29,7 @@ func tick_down() -> void:
 func explode() -> void:
 	has_exploded = true
 	Global.spawn_big_explosion.emit(global_position)
-	explosion_area.explode()
+	explosion_shape.explode()
 
 
 func on_explosion() -> void:

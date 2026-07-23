@@ -4,14 +4,14 @@ const BLACK_BOMB_SCENE = preload("res://Bombs/BlackBomb/BlackBomb.tscn")
 const BIG_EXPLOSION_SCENE = preload("res://Bombs/Effects/BigExplosion/BigExplosion.tscn")
 const SMALL_EXPLOSION_SCENE = preload("res://Bombs/Effects/SmallExplosion/SmallExplosion.tscn")
 
-const EA_1X7_LINE = preload("res://Bombs/Effects/ExplosionAreas/ExplosionArea1x7Line.tscn")
-const EA_3X3_SQUARE = preload("res://Bombs/Effects/ExplosionAreas/ExplosionArea3x3Square.tscn")
-const EA_5X5_CROSS = preload("res://Bombs/Effects/ExplosionAreas/ExplosionArea5x5Cross.tscn")
-const EA_5X5_SQUARE = preload("res://Bombs/Effects/ExplosionAreas/ExplosionArea5x5Square.tscn")
-const EA_5X5_X = preload("res://Bombs/Effects/ExplosionAreas/ExplosionArea5x5X.tscn")
-const EA_7X1_LINE = preload("res://Bombs/Effects/ExplosionAreas/ExplosionArea7x1Line.tscn")
+const EA_1X7_LINE = preload("res://Bombs/Effects/ExplosionShapes/ExplosionShape1x7Line.tscn")
+const EA_3X3_SQUARE = preload("res://Bombs/Effects/ExplosionShapes/ExplosionShape3x3Square.tscn")
+const EA_5X5_CROSS = preload("res://Bombs/Effects/ExplosionShapes/ExplosionShape5x5Cross.tscn")
+const EA_5X5_SQUARE = preload("res://Bombs/Effects/ExplosionShapes/ExplosionShape5x5Square.tscn")
+const EA_5X5_X = preload("res://Bombs/Effects/ExplosionShapes/ExplosionShape5x5X.tscn")
+const EA_7X1_LINE = preload("res://Bombs/Effects/ExplosionShapes/ExplosionShape7x1Line.tscn")
 
-var explosion_areas = [
+var explosion_shapes = [
 	EA_1X7_LINE,
 	EA_3X3_SQUARE,
 	EA_5X5_CROSS,
@@ -20,11 +20,11 @@ var explosion_areas = [
 	EA_7X1_LINE,
 ]
 
-var next_bomb_area = 0;
+var next_bomb_shape = 0;
 
 
 func _ready() -> void:
-	next_bomb_area = randi_range(0, len(explosion_areas) - 1)
+	next_bomb_shape = randi_range(0, len(explosion_shapes) - 1)
 	Global.spawn_bomb.connect(_spawn_bomb)
 	Global.spawn_big_explosion.connect(_spawn_big_explosion)
 	Global.spawn_small_explosion.connect(_spawn_small_explosion)
@@ -45,11 +45,11 @@ func _spawn_bomb(bomb_position: Vector2) -> void:
 		grid_y -= 4
 	var grid_snapped = Vector2(grid_x, grid_y)
 	bomb.global_position = grid_snapped
-	var explosion_area = explosion_areas[next_bomb_area].instantiate()
-	bomb.set_explosion_area(explosion_area)
+	var explosion_shape = explosion_shapes[next_bomb_shape].instantiate()
+	bomb.set_explosion_shape(explosion_shape)
 	add_child(bomb)
-	next_bomb_area = randi_range(0, len(explosion_areas) - 1)
-	Global.signal_next_bomb_area.emit(next_bomb_area)
+	next_bomb_shape = randi_range(0, len(explosion_shapes) - 1)
+	Global.signal_next_bomb_shape.emit(next_bomb_shape)
 
 
 func _spawn_big_explosion(bomb_position: Vector2) -> void:

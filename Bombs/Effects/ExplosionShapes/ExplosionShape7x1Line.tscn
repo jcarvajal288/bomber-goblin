@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://rh568x370x6j"]
 
-[ext_resource type="Script" uid="uid://b2lnitmvfpews" path="res://Bombs/Effects/ExplosionAreas/explosion_area.gd" id="1_0mdyc"]
-[ext_resource type="PackedScene" uid="uid://cs4g4aox0xt03" path="res://Bombs/Effects/ExplosionAreas/ExplosionAreaTile/ExplosionAreaTile.tscn" id="2_q3fuc"]
+[ext_resource type="Script" uid="uid://b2lnitmvfpews" path="res://Bombs/Effects/ExplosionShapes/explosion_shape.gd" id="1_0mdyc"]
+[ext_resource type="PackedScene" uid="uid://cs4g4aox0xt03" path="res://Bombs/Effects/ExplosionShapes/ExplosionShapeTile/ExplosionShapeTile.tscn" id="2_q3fuc"]
 
 [node name="ExplosionArea7x1Line" type="Node2D" unique_id=34019860]
 script = ExtResource("1_0mdyc")
