@@ -34,6 +34,13 @@ func set_new_bomb_shape() -> void:
 	Global.signal_next_bomb_shape.emit(next_bomb_shape)
 
 
+func _process(_delta: float) -> void:
+	var old_bomb_shape = next_bomb_shape
+	if Input.is_action_just_pressed("cycle_bomb"):
+		while next_bomb_shape == old_bomb_shape:
+			set_new_bomb_shape()
+
+
 func _spawn_bomb(bomb_position: Vector2) -> void:
 	var player_position = Global.player.global_position
 	var bomb = BLACK_BOMB_SCENE.instantiate()

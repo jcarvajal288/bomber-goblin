@@ -8,6 +8,6 @@ extends MarginContainer
 
 func _process(_delta: float) -> void:
 	score_label.text  = "%07d" % Global.score
-	chests_label.text  = "%03d" % Global.chests_left
+	chests_label.text  = "%02d" % Global.chests_left
 	timer_label.text = "%03d" % $StageTimer.time_left
 	enemy_label.text = "%02d" % $EnemyTimer.time_left
