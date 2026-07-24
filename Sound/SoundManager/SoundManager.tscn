@@ -14,6 +14,8 @@
 [ext_resource type="AudioStream" uid="uid://d4b7ctl8eyttl" path="res://Sound/Explosions/TreasureExplosion/treasure_a.wav" id="12_oukoc"]
 [ext_resource type="AudioStream" uid="uid://olvrc2v4ivud" path="res://Sound/Explosions/TreasureExplosion/treasure_b.wav" id="13_2rb7f"]
 [ext_resource type="AudioStream" uid="uid://dqqav4568efta" path="res://Sound/Explosions/TreasureExplosion/treasure_c.wav" id="14_m7n4m"]
+[ext_resource type="AudioStream" uid="uid://dlm3mpyxpfaox" path="res://Sound/Explosions/RedBarrelExplosion/small_explosion.wav" id="15_m7n4m"]
+[ext_resource type="AudioStream" uid="uid://c1fonc0pp4eq5" path="res://Sound/Explosions/RedBarrelExplosion/small_explosion_2.wav" id="16_2thdw"]
 
 [sub_resource type="AudioStreamRandomizer" id="AudioStreamRandomizer_fuhmt"]
 streams_count = 7
@@ -37,6 +39,12 @@ stream_0/stream = ExtResource("12_oukoc")
 stream_1/stream = ExtResource("13_2rb7f")
 stream_2/stream = ExtResource("14_m7n4m")
 
+[sub_resource type="AudioStreamRandomizer" id="AudioStreamRandomizer_se1jv"]
+random_pitch = 1.0293022
+streams_count = 2
+stream_0/stream = ExtResource("15_m7n4m")
+stream_1/stream = ExtResource("16_2thdw")
+
 [node name="SoundManager" type="Node" unique_id=2086895508]
 script = ExtResource("1_c3v5k")
 
@@ -50,3 +58,8 @@ max_polyphony = 4
 
 [node name="TreasureExplosion" type="AudioStreamPlayer2D" parent="." unique_id=1899025]
 stream = SubResource("AudioStreamRandomizer_r0tkx")
+max_polyphony = 4
+
+[node name="RedBarrelExplosion" type="AudioStreamPlayer2D" parent="." unique_id=1679639396]
+stream = SubResource("AudioStreamRandomizer_se1jv")
+max_polyphony = 4
