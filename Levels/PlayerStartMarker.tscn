@@ -1,0 +1,9 @@
+[gd_scene format=3 uid="uid://dv3eobj62gelj"]
+
+[ext_resource type="Texture2D" uid="uid://bsnmivwl6gysl" path="res://Actors/Sapper/_art/Idle.png" id="1_ohcpl"]
+
+[node name="PlayerStartMarker" type="Sprite2D" unique_id=63501331]
+scale = Vector2(2, 2)
+texture = ExtResource("1_ohcpl")
+hframes = 20
+vframes = 4

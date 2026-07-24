@@ -11,6 +11,7 @@
 [ext_resource type="PackedScene" uid="uid://cgk1uh86fxvlp" path="res://Objects/Chests/Chest6/Chest6.tscn" id="8_bgvdb"]
 [ext_resource type="PackedScene" uid="uid://4h4cxqh8tc2" path="res://Actors/DwarfFighter/DwarfFighter.tscn" id="9_nghqs"]
 [ext_resource type="PackedScene" uid="uid://c36nc13sokl4x" path="res://Objects/Barrel/RedBarrel.tscn" id="10_0tpqj"]
+[ext_resource type="PackedScene" uid="uid://dv3eobj62gelj" path="res://Levels/PlayerStartMarker.tscn" id="12_bgvdb"]
 
 [sub_resource type="TileSetScenesCollectionSource" id="TileSetScenesCollectionSource_0tpqj"]
 scenes/1/scene = ExtResource("2_sjqvx")
@@ -47,3 +48,6 @@ position = Vector2(442, 214)
 
 [node name="DwarfFighter2" parent="." unique_id=101507159 instance=ExtResource("9_nghqs")]
 position = Vector2(94, 219)
+
+[node name="PlayerStartMarker" parent="." unique_id=63501331 instance=ExtResource("12_bgvdb")]
+position = Vector2(265, 232)
