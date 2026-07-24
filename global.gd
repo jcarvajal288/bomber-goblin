@@ -26,6 +26,7 @@ signal signal_next_bomb_shape(next_bomb_shape: int)
 signal spawn_bomb(bomb_position: Vector2)
 signal spawn_big_explosion(bomb_position: Vector2)
 signal spawn_small_explosion(explosion_position: Vector2)
+signal signal_victory
 @warning_ignore_restore("unused_signal")
 
 func wait_for_sec(secs: float) -> void:
