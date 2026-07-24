@@ -18,6 +18,7 @@ position = Vector2(0, -16)
 position = Vector2(0, 48)
 
 [node name="ExplosionShapeTile7" parent="." unique_id=1200317157 instance=ExtResource("2_ctnp1")]
+z_as_relative = false
 position = Vector2(0, -48)
 
 [node name="ExplosionShapeTile8" parent="." unique_id=1235757717 instance=ExtResource("2_ctnp1")]

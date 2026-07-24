@@ -4,6 +4,7 @@
 [ext_resource type="Script" uid="uid://b2lnitmvfpews" path="res://Bombs/Effects/ExplosionShapes/explosion_shape.gd" id="1_vr86s"]
 
 [node name="ExplosionArea5x5Cross" type="Node2D" unique_id=34019860]
+z_as_relative = false
 script = ExtResource("1_vr86s")
 
 [node name="ExplosionAreaTile" parent="." unique_id=720239746 instance=ExtResource("1_bff0k")]

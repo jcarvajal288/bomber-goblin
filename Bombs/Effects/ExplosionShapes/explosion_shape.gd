@@ -8,6 +8,9 @@ var time: float = 0.0
 
 signal explosion_finished
 
+func _ready() -> void:
+	z_index = Global.RenderOrder.INDICATOR
+
 
 func tick_up_color() -> void:
 	for child in get_children():

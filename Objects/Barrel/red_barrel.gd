@@ -8,6 +8,7 @@ func _ready() -> void:
 func explode(multiplier: int) -> void:
 	has_exploded = true
 	Global.spawn_big_explosion.emit(global_position)
+	print("exploding")
 	$ExplosionShape3x3Square.explode(multiplier)
 	ScoreTracker.add_score.emit(data.base_value, global_position, multiplier)
 

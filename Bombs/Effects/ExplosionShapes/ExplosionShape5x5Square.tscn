@@ -4,6 +4,7 @@
 [ext_resource type="PackedScene" uid="uid://cs4g4aox0xt03" path="res://Bombs/Effects/ExplosionShapes/ExplosionShapeTile/ExplosionShapeTile.tscn" id="2_wea7q"]
 
 [node name="ExplosionArea5x5Square" type="Node2D" unique_id=34019860]
+z_as_relative = false
 script = ExtResource("1_bnq4i")
 
 [node name="ExplosionAreaTile" parent="." unique_id=720239746 instance=ExtResource("2_wea7q")]

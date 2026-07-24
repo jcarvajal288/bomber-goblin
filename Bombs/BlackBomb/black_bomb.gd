@@ -15,6 +15,7 @@ func _ready() -> void:
 func set_explosion_shape(ea: Node2D) -> void:
 	explosion_shape = ea
 	explosion_shape.explosion_finished.connect(queue_free)
+	explosion_shape.z_index = Global.RenderOrder.INDICATOR
 	add_child(explosion_shape)
 
 

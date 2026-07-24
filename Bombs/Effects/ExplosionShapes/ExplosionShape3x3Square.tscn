@@ -7,6 +7,7 @@
 script = ExtResource("1_tl1ut")
 
 [node name="ExplosionShapeTile" parent="." unique_id=720239746 instance=ExtResource("2_nc8ob")]
+z_as_relative = false
 position = Vector2(-16, -16)
 
 [node name="ExplosionShapeTile2" parent="." unique_id=1357638683 instance=ExtResource("2_nc8ob")]
