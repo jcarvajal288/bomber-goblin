@@ -39,4 +39,5 @@ func pause_game(should_pause: bool) -> void:
 
 func _restart_stage() -> void:
 	pause_game(false)
+	$BombSpawner.cleanup()
 	start_level(starting_level)

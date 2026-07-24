@@ -74,3 +74,8 @@ func _spawn_small_explosion(bomb_position: Vector2) -> void:
 	var explosion = SMALL_EXPLOSION_SCENE.instantiate()
 	explosion.global_position = bomb_position
 	add_child(explosion)
+
+
+func cleanup() -> void:
+	for child in get_children():
+		child.queue_free()
