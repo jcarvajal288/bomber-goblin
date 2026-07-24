@@ -10,6 +10,7 @@ const speed = 25
 func _ready() -> void:
 	$StateMachine.init(self)
 	$AttackCircle.body_entered.connect(_on_body_entered)
+	Global.enemies_left += 1
 
 
 func on_explosion(multiplier: int) -> void:

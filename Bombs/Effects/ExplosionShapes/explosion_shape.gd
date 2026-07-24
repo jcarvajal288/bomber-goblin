@@ -47,5 +47,4 @@ func explode(multiplier: int) -> void:
 		if can_see_center(child):
 			child.explode(multiplier)
 		else:
-			print("can't see")
 			child.queue_free()
