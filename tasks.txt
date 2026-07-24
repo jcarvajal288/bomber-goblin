@@ -35,6 +35,8 @@ x respawn sapper on death
 x add 7x7 Diamond explosion shape
 x add victory screen with stage restart
 x decrease timer (30 secs) on death
+_ display score in victory screen
+_ defeat screen when timer expires
 
 
 

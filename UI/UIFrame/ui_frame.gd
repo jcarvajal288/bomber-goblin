@@ -8,6 +8,7 @@ extends MarginContainer
 
 func _ready() -> void:
 	Global.respawn_player.connect(decrease_timer)
+	Global.restart_stage.connect(_restart_stage)
 
 
 func _process(_delta: float) -> void:
@@ -24,3 +25,7 @@ func decrease_timer() -> void:
 		# trigger timeout function here
 	else:
 		$StageTimer.start(new_time)
+
+
+func _restart_stage() -> void:
+	$StageTimer.start(300)

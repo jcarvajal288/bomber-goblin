@@ -6,6 +6,10 @@
 [sub_resource type="LabelSettings" id="LabelSettings_fuhmt"]
 font = ExtResource("1_rwflm")
 
+[sub_resource type="LabelSettings" id="LabelSettings_r0tkx"]
+font = ExtResource("1_rwflm")
+font_size = 9
+
 [sub_resource type="LabelSettings" id="LabelSettings_p6ya2"]
 font = ExtResource("1_rwflm")
 font_size = 9
@@ -39,6 +43,12 @@ alignment = 1
 layout_mode = 2
 text = "Stage Clear!"
 label_settings = SubResource("LabelSettings_fuhmt")
+
+[node name="ScoreLabel" type="Label" parent="ColorRect/CenterContainer/VBoxContainer" unique_id=557232757]
+layout_mode = 2
+text = "Score:"
+label_settings = SubResource("LabelSettings_r0tkx")
+horizontal_alignment = 1
 
 [node name="RetryPrompt" type="Label" parent="ColorRect/CenterContainer/VBoxContainer" unique_id=222701829]
 layout_mode = 2
