@@ -9,4 +9,5 @@ func enter() -> void:
 func process_frame(_delta: float) -> State:
 	if not animation_player.is_playing():
 		subject.queue_free()
+		Global.respawn_player.emit()
 	return null

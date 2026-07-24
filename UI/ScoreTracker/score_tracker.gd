@@ -12,11 +12,17 @@ func _ready() -> void:
 
 
 func _add_score(amount: int, score_position: Vector2, multiplier: int) -> void:
-	var adjusted_amount = amount * (2 ** multiplier)
+	var adjusted_amount = 1
+	if (multiplier <= 0):
+		adjusted_amount = multiplier * amount
+	else:
+		adjusted_amount = amount * (2 ** multiplier)
 	score += adjusted_amount
 	var toast = SCORE_TOAST_SCENE.instantiate()
 	toast.text = str(adjusted_amount)
-	if multiplier == 0:
+	if multiplier <= -1:
+		toast.modulate = Color.PURPLE
+	elif multiplier == 0:
 		toast.modulate = Color.GREEN
 	elif multiplier == 1:
 		toast.modulate = Color.YELLOW

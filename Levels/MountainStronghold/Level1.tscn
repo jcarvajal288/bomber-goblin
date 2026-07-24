@@ -1,6 +1,7 @@
 [gd_scene format=4 uid="uid://wx1tlmk4t8cr"]
 
 [ext_resource type="TileSet" uid="uid://p8pdsfnjrpx6" path="res://Levels/MountainStronghold/mountain_stronghold.tres" id="1_ej6bl"]
+[ext_resource type="Script" uid="uid://ciuxt6f00qxm7" path="res://Levels/level.gd" id="1_sn2cg"]
 [ext_resource type="PackedScene" uid="uid://cr38yfavp4gwt" path="res://Objects/Barrel/Barrel.tscn" id="2_sjqvx"]
 [ext_resource type="PackedScene" uid="uid://jnq1djtk2fdn" path="res://Objects/Chests/Chest1/Chest1.tscn" id="3_k13f1"]
 [ext_resource type="PackedScene" uid="uid://c7xsmf2q4haoy" path="res://Objects/Chests/Chest2/Chest2.tscn" id="4_6bkg8"]
@@ -25,6 +26,7 @@ scenes/8/scene = ExtResource("8_bgvdb")
 sources/0 = SubResource("TileSetScenesCollectionSource_0tpqj")
 
 [node name="Level1" type="Node2D" unique_id=1037127883]
+script = ExtResource("1_sn2cg")
 
 [node name="TileMapFloor" type="TileMapLayer" parent="." unique_id=564604798]
 scale = Vector2(2, 2)
