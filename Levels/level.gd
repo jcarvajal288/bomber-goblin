@@ -13,5 +13,4 @@ func _respawn_player() -> void:
 	Global.player = player
 	add_child(player)
 	var score_deduction = ScoreTracker.score * 0.1
-	print("deducting %d score" % score_deduction)
 	ScoreTracker.add_score.emit(score_deduction, player.global_position, -1)
