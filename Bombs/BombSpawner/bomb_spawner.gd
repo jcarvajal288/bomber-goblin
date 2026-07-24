@@ -10,6 +10,7 @@ const EA_5X5_CROSS = preload("res://Bombs/Effects/ExplosionShapes/ExplosionShape
 const EA_5X5_SQUARE = preload("res://Bombs/Effects/ExplosionShapes/ExplosionShape5x5Square.tscn")
 const EA_5X5_X = preload("res://Bombs/Effects/ExplosionShapes/ExplosionShape5x5X.tscn")
 const EA_7X1_LINE = preload("res://Bombs/Effects/ExplosionShapes/ExplosionShape7x1Line.tscn")
+const EA_7X7_DIAMOND = preload("res://Bombs/Effects/ExplosionShapes/ExplosionShape7x7Diamond.tscn")
 
 var explosion_shapes = [
 	EA_1X7_LINE,
@@ -18,6 +19,7 @@ var explosion_shapes = [
 	EA_5X5_SQUARE,
 	EA_5X5_CROSS,
 	EA_5X5_X,
+	EA_7X7_DIAMOND,
 ]
 
 var next_bomb_shape = 0;
