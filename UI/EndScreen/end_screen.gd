@@ -1,5 +1,7 @@
 extends CanvasLayer
 
+const MAIN_MENU_PATH = "res://UI/MainMenu/MainMenu.tscn"
+
 @onready var win_status_label = $ColorRect/CenterContainer/VBoxContainer/StageClear
 @onready var score_label = $ColorRect/CenterContainer/VBoxContainer/ScoreLabel
 
@@ -13,6 +15,8 @@ func _ready() -> void:
 
 
 func _process(_delta: float) -> void:
-	if Input.is_action_pressed("restart_stage"):
+	if Input.is_action_just_pressed("restart_stage"):
 		Global.restart_stage.emit()
 		queue_free()
+	elif Input.is_action_just_pressed("ui_cancel"):
+		get_tree().change_scene_to_file(MAIN_MENU_PATH)

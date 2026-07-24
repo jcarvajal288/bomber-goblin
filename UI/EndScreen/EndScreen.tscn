@@ -5,12 +5,17 @@
 
 [sub_resource type="LabelSettings" id="LabelSettings_fuhmt"]
 font = ExtResource("2_q8mru")
+font_size = 18
 
 [sub_resource type="LabelSettings" id="LabelSettings_r0tkx"]
 font = ExtResource("2_q8mru")
 font_size = 9
 
 [sub_resource type="LabelSettings" id="LabelSettings_p6ya2"]
+font = ExtResource("2_q8mru")
+font_size = 9
+
+[sub_resource type="LabelSettings" id="LabelSettings_se1jv"]
 font = ExtResource("2_q8mru")
 font_size = 9
 
@@ -43,6 +48,7 @@ alignment = 1
 layout_mode = 2
 text = "Stage Clear!"
 label_settings = SubResource("LabelSettings_fuhmt")
+horizontal_alignment = 1
 
 [node name="ScoreLabel" type="Label" parent="ColorRect/CenterContainer/VBoxContainer" unique_id=557232757]
 layout_mode = 2
@@ -55,3 +61,8 @@ layout_mode = 2
 text = "Press 'R' to retry"
 label_settings = SubResource("LabelSettings_p6ya2")
 horizontal_alignment = 1
+
+[node name="MainMenuPrompt" type="Label" parent="ColorRect/CenterContainer/VBoxContainer" unique_id=2035668812]
+layout_mode = 2
+text = "Press 'Esc' to return to Main Menu"
+label_settings = SubResource("LabelSettings_se1jv")

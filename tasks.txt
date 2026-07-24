@@ -35,8 +35,11 @@ x respawn sapper on death
 x add 7x7 Diamond explosion shape
 x add victory screen with stage restart
 x decrease timer (30 secs) on death
-_ display score in victory screen
-_ defeat screen when timer expires
+x display score in victory screen
+x defeat screen when timer expires
+x Make main menu and be able to start and quit game
+x Allow quitting back to main menu in end screens
+_ Make pause screen
 
 
 
