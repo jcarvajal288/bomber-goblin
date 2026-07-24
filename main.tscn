@@ -1,26 +1,28 @@
 [gd_scene format=3 uid="uid://b2mv5djarnwqe"]
 
+[ext_resource type="Script" uid="uid://cjfvtmwnm6cd2" path="res://gameplay.gd" id="1_7mycd"]
 [ext_resource type="PackedScene" uid="uid://bpj2g5ebv3n3y" path="res://Actors/Sapper/Sapper.tscn" id="1_ig7tw"]
-[ext_resource type="Script" uid="uid://bteyjq40tvdtc" path="res://main.gd" id="1_lquwl"]
 [ext_resource type="PackedScene" uid="uid://wx1tlmk4t8cr" path="res://Levels/MountainStronghold/Level1.tscn" id="2_0xm2m"]
 [ext_resource type="PackedScene" uid="uid://cfej23ppjlb8e" path="res://Sound/SoundManager/SoundManager.tscn" id="2_7mycd"]
 [ext_resource type="PackedScene" uid="uid://dqwy4kavgmryr" path="res://Bombs/BombSpawner/BombSpawner.tscn" id="3_h2yge"]
 [ext_resource type="PackedScene" uid="uid://vtrtgf17vece" path="res://UI/UIFrame/UIFrame.tscn" id="5_lquwl"]
 
 [node name="Main" type="Node2D" unique_id=352477210]
-script = ExtResource("1_lquwl")
 
-[node name="SoundManager" parent="." unique_id=2086895508 instance=ExtResource("2_7mycd")]
+[node name="Gameplay" type="Node" parent="." unique_id=2136420240]
+script = ExtResource("1_7mycd")
 
-[node name="Sapper" parent="." unique_id=1352799463 instance=ExtResource("1_ig7tw")]
+[node name="SoundManager" parent="Gameplay" unique_id=2086895508 instance=ExtResource("2_7mycd")]
+
+[node name="Sapper" parent="Gameplay" unique_id=1352799463 instance=ExtResource("1_ig7tw")]
 z_index = 5
 position = Vector2(265.375, 238.04)
 
-[node name="BombSpawner" parent="." unique_id=736221780 instance=ExtResource("3_h2yge")]
+[node name="BombSpawner" parent="Gameplay" unique_id=736221780 instance=ExtResource("3_h2yge")]
 
-[node name="Level1" parent="." unique_id=1037127883 instance=ExtResource("2_0xm2m")]
+[node name="Level1" parent="Gameplay" unique_id=1037127883 instance=ExtResource("2_0xm2m")]
 
-[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=781787266]
+[node name="CanvasLayer" type="CanvasLayer" parent="Gameplay" unique_id=781787266]
 
-[node name="UiFrame" parent="CanvasLayer" unique_id=1656794709 instance=ExtResource("5_lquwl")]
+[node name="UiFrame" parent="Gameplay/CanvasLayer" unique_id=1656794709 instance=ExtResource("5_lquwl")]
 mouse_filter = 2
