@@ -15,3 +15,5 @@ func _on_play_sound(sound_effect: Sounds.SoundEffect, sound_position: Vector2) -
 		play_sound_at_position($BombExplosion, sound_position)
 	elif sound_effect == Sounds.SoundEffect.BARREL_EXPLOSION: 
 		play_sound_at_position($BarrelExplosion, sound_position)
+	elif sound_effect == Sounds.SoundEffect.TREASURE_EXPLOSION: 
+		play_sound_at_position($TreasureExplosion, sound_position)

@@ -9,3 +9,4 @@ func _ready() -> void:
 func explode(multiplier: int) -> void:
 	Global.chests_left -= 1
 	super(multiplier)
+	Sounds.play_sound.emit(Sounds.SoundEffect.TREASURE_EXPLOSION, global_position)

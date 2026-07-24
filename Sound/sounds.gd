@@ -7,4 +7,5 @@ signal play_sound(sound_effect: SoundEffect, sound_position: Vector2)
 enum SoundEffect {
 	BOMB_EXPLOSION,
 	BARREL_EXPLOSION,
+	TREASURE_EXPLOSION,
 }
