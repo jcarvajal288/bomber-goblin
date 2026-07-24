@@ -1,0 +1,215 @@
+[gd_scene format=3 uid="uid://0fa3e1n0hypd"]
+
+[ext_resource type="Script" uid="uid://8c3dvhfo5a8l" path="res://UI/MainMenu/main_menu.gd" id="1_8x0bb"]
+[ext_resource type="Texture2D" uid="uid://bsnmivwl6gysl" path="res://Actors/Sapper/_art/Idle.png" id="2_nahvw"]
+[ext_resource type="FontFile" uid="uid://oygny1aq118x" path="res://UI/_fonts/High_Birth.ttf" id="3_4elqj"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ri767"]
+atlas = ExtResource("2_nahvw")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_a712v"]
+atlas = ExtResource("2_nahvw")
+region = Rect2(32, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_1dhmk"]
+atlas = ExtResource("2_nahvw")
+region = Rect2(64, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_jhcbk"]
+atlas = ExtResource("2_nahvw")
+region = Rect2(96, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_32jca"]
+atlas = ExtResource("2_nahvw")
+region = Rect2(128, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_srm2j"]
+atlas = ExtResource("2_nahvw")
+region = Rect2(160, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_eoxer"]
+atlas = ExtResource("2_nahvw")
+region = Rect2(192, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_wdl18"]
+atlas = ExtResource("2_nahvw")
+region = Rect2(224, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_migmm"]
+atlas = ExtResource("2_nahvw")
+region = Rect2(256, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_jt3i8"]
+atlas = ExtResource("2_nahvw")
+region = Rect2(288, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_q33u5"]
+atlas = ExtResource("2_nahvw")
+region = Rect2(320, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hvgpy"]
+atlas = ExtResource("2_nahvw")
+region = Rect2(352, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4qf4k"]
+atlas = ExtResource("2_nahvw")
+region = Rect2(384, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_h4ivt"]
+atlas = ExtResource("2_nahvw")
+region = Rect2(416, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5thul"]
+atlas = ExtResource("2_nahvw")
+region = Rect2(448, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_a6vv6"]
+atlas = ExtResource("2_nahvw")
+region = Rect2(480, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_00tn1"]
+atlas = ExtResource("2_nahvw")
+region = Rect2(512, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_rehxt"]
+atlas = ExtResource("2_nahvw")
+region = Rect2(544, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4ngpu"]
+atlas = ExtResource("2_nahvw")
+region = Rect2(576, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_kxsne"]
+atlas = ExtResource("2_nahvw")
+region = Rect2(608, 0, 32, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_fuhmt"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ri767")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_a712v")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_1dhmk")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_jhcbk")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_32jca")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_srm2j")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_eoxer")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_wdl18")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_migmm")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_jt3i8")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_q33u5")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_hvgpy")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4qf4k")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_h4ivt")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_5thul")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_a6vv6")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_00tn1")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_rehxt")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4ngpu")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_kxsne")
+}],
+"loop": 1,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="LabelSettings" id="LabelSettings_fuhmt"]
+font = ExtResource("3_4elqj")
+font_size = 27
+
+[sub_resource type="LabelSettings" id="LabelSettings_p6ya2"]
+font = ExtResource("3_4elqj")
+font_size = 18
+
+[sub_resource type="LabelSettings" id="LabelSettings_r0tkx"]
+font = ExtResource("3_4elqj")
+font_size = 18
+
+[node name="MainMenu" type="CanvasLayer" unique_id=863071255]
+script = ExtResource("1_8x0bb")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=635296215]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.16517437, 0.18143287, 0.23737252, 1)
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1847575062]
+position = Vector2(135, 226)
+scale = Vector2(10, 10)
+sprite_frames = SubResource("SpriteFrames_fuhmt")
+autoplay = "default"
+
+[node name="Title" type="Label" parent="." unique_id=116624318]
+texture_filter = 1
+offset_left = 108.0
+offset_top = 40.0
+offset_right = 353.0
+offset_bottom = 84.0
+text = "Goblin Sapper"
+label_settings = SubResource("LabelSettings_fuhmt")
+
+[node name="MenuOptionsContainer" type="VBoxContainer" parent="." unique_id=489230835]
+anchors_preset = 11
+anchor_left = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -130.0
+offset_right = -66.0
+grow_horizontal = 0
+grow_vertical = 2
+theme_override_constants/separation = 4
+alignment = 1
+
+[node name="Start" type="Label" parent="MenuOptionsContainer" unique_id=1736815808]
+texture_filter = 1
+layout_mode = 2
+text = "Start"
+label_settings = SubResource("LabelSettings_p6ya2")
+
+[node name="Quit" type="Label" parent="MenuOptionsContainer" unique_id=2002463067]
+texture_filter = 1
+layout_mode = 2
+text = "Quit"
+label_settings = SubResource("LabelSettings_r0tkx")

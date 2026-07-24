@@ -1,0 +1,21 @@
+[gd_scene format=3 uid="uid://c24y3o61vkwkv"]
+
+[ext_resource type="Script" uid="uid://cjfvtmwnm6cd2" path="res://gameplay.gd" id="1_cbffv"]
+[ext_resource type="PackedScene" uid="uid://bo70h1oji36wg" path="res://Levels/MountainStronghold/TestLevel.tscn" id="2_fbudy"]
+[ext_resource type="PackedScene" uid="uid://wx1tlmk4t8cr" path="res://Levels/MountainStronghold/Level1.tscn" id="3_0m7cd"]
+[ext_resource type="PackedScene" uid="uid://cfej23ppjlb8e" path="res://Sound/SoundManager/SoundManager.tscn" id="4_2ihbs"]
+[ext_resource type="PackedScene" uid="uid://dqwy4kavgmryr" path="res://Bombs/BombSpawner/BombSpawner.tscn" id="5_1qy1k"]
+[ext_resource type="PackedScene" uid="uid://vtrtgf17vece" path="res://UI/UIFrame/UIFrame.tscn" id="6_3n40r"]
+
+[node name="Gameplay" type="Node" unique_id=1450791140]
+script = ExtResource("1_cbffv")
+levels = Array[PackedScene]([ExtResource("2_fbudy"), ExtResource("3_0m7cd")])
+
+[node name="SoundManager" parent="." unique_id=2086895508 instance=ExtResource("4_2ihbs")]
+
+[node name="BombSpawner" parent="." unique_id=736221780 instance=ExtResource("5_1qy1k")]
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1786893640]
+
+[node name="UiFrame" parent="CanvasLayer" unique_id=1656794709 instance=ExtResource("6_3n40r")]
+mouse_filter = 2
