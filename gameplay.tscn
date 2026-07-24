@@ -10,6 +10,7 @@
 [node name="Gameplay" type="Node" unique_id=1450791140]
 script = ExtResource("1_cbffv")
 levels = Array[PackedScene]([ExtResource("2_fbudy"), ExtResource("3_0m7cd")])
+starting_level = 1
 
 [node name="SoundManager" parent="." unique_id=2086895508 instance=ExtResource("4_2ihbs")]
 
