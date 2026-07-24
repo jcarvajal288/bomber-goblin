@@ -25,6 +25,7 @@ enum CollisionLayer {
 @warning_ignore_start("unused_signal")
 signal respawn_player
 signal restart_stage
+signal show_toast(text: String, toast_position: Vector2, color: Color)
 signal signal_next_bomb_shape(next_bomb_shape: int)
 signal spawn_bomb(bomb_position: Vector2)
 signal spawn_big_explosion(bomb_position: Vector2)

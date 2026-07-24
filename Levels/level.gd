@@ -23,3 +23,5 @@ func _respawn_player() -> void:
 	spawn_player()
 	var score_deduction = ScoreTracker.score * 0.1
 	ScoreTracker.add_score.emit(score_deduction, Global.player.global_position, -1)
+	await Global.wait_for_sec(1.0)
+	ScoreTracker._show_toast("-30 secs", Global.player.global_position, Color.MAGENTA)

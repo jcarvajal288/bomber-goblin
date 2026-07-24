@@ -37,4 +37,4 @@ position = Vector2(249, 136)
 position = Vector2(89, 72)
 
 [node name="PlayerStartMarker" parent="." unique_id=63501331 instance=ExtResource("10_gx0pp")]
-position = Vector2(233, 134)
+position = Vector2(136, 170)

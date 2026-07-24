@@ -8,7 +8,9 @@ signal add_score(amount: int, score_position: Vector2, multiplier: int)
 
 
 func _ready() -> void:
+	Global.show_toast.connect(_show_toast)
 	add_score.connect(_add_score)
+	
 
 
 func _add_score(amount: int, score_position: Vector2, multiplier: int) -> void:
@@ -36,4 +38,15 @@ func _add_score(amount: int, score_position: Vector2, multiplier: int) -> void:
 	toast.reset_size()
 	var half_size_offset = toast.size / 2
 	toast.global_position = score_position - half_size_offset
+	toast.start()
+
+
+func _show_toast(text: String, toast_position, color: Color) -> void:
+	var toast = SCORE_TOAST_SCENE.instantiate()
+	toast.text = text
+	toast.modulate = color
+	add_child(toast)
+	toast.reset_size()
+	var half_size_offset = toast.size / 2
+	toast.global_position = toast_position - half_size_offset
 	toast.start()

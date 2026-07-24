@@ -33,6 +33,8 @@ x dwarf fighter can kill the player
 x walls block explosions
 x respawn sapper on death
 x add 7x7 Diamond explosion shape
+x add victory screen with stage restart
+x decrease timer (30 secs) on death
 
 
 
@@ -41,6 +43,7 @@ NOTES
         - different sizes of chests give different score
     - earn exponential points for chaining bombs into each other
     - three stages: outside courtyard, inside, rampart
+    
 
 NICE TO HAVES
     - powerups
@@ -49,4 +52,5 @@ NICE TO HAVES
     - backgrounds for the levels
     x add 7x7 diamond explosion shape
     x stagger explosion tile explosions inner to outer
+    _ increasingly more exciting treasure sounds for higher multipliers
 
