@@ -10,6 +10,9 @@ signal explosion_finished
 
 func _ready() -> void:
 	z_index = Global.RenderOrder.INDICATOR
+	for child in get_children():
+		child.z_index = Global.RenderOrder.INDICATOR
+		child.z_as_relative = false
 
 
 func tick_up_color() -> void:
@@ -33,7 +36,7 @@ func _process(delta: float) -> void:
 func can_see_center(node: Node2D) -> bool:
 	var space_state = get_world_2d().direct_space_state
 	var query = PhysicsRayQueryParameters2D.create(node.global_position, global_position)
-	query.collision_mask = 1
+	query.collision_mask = 4
 	var result = space_state.intersect_ray(query)
 	return result.is_empty()
 	
@@ -44,4 +47,5 @@ func explode(multiplier: int) -> void:
 		if can_see_center(child):
 			child.explode(multiplier)
 		else:
+			print("can't see")
 			child.queue_free()

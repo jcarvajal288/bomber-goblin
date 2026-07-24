@@ -31,10 +31,8 @@ x melee chase enemy (dwarf fighter)
 x explosive barrel (3x3 explosion shape)
 x dwarf fighter can kill the player
 x walls block explosions
-_ respawn sapper on death
+x respawn sapper on death
 
-BUGS:
-    - red barrels aren't exploding
 
 
 NOTES
