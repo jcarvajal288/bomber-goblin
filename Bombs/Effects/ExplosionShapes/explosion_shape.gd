@@ -43,8 +43,13 @@ func can_see_center(node: Node2D) -> bool:
 
 
 func explode(multiplier: int) -> void:
-	for child in get_children():
-		if can_see_center(child):
-			child.explode(multiplier)
-		else:
-			child.queue_free()
+	var current_order = 0
+	while get_children():
+		var batch = get_children().filter(func(tile): return tile.explosion_order == current_order)
+		for tile in batch:
+			if can_see_center(tile):
+				tile.explode(multiplier)
+			else:
+				tile.queue_free()
+		current_order += 1
+		await Global.wait_for_sec(0.15)

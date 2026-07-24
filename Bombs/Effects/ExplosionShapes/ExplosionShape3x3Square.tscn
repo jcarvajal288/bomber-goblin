@@ -9,26 +9,34 @@ script = ExtResource("1_tl1ut")
 [node name="ExplosionShapeTile" parent="." unique_id=720239746 instance=ExtResource("2_nc8ob")]
 z_as_relative = false
 position = Vector2(-16, -16)
+explosion_order = 1
 
 [node name="ExplosionShapeTile2" parent="." unique_id=1357638683 instance=ExtResource("2_nc8ob")]
 position = Vector2(0, -16)
+explosion_order = 1
 
 [node name="ExplosionShapeTile3" parent="." unique_id=359658532 instance=ExtResource("2_nc8ob")]
 position = Vector2(16, -16)
+explosion_order = 1
 
 [node name="ExplosionShapeTile4" parent="." unique_id=1759359794 instance=ExtResource("2_nc8ob")]
 position = Vector2(-16, 0)
+explosion_order = 1
 
 [node name="ExplosionShapeTile5" parent="." unique_id=956128728 instance=ExtResource("2_nc8ob")]
 
 [node name="ExplosionShapeTile6" parent="." unique_id=567737712 instance=ExtResource("2_nc8ob")]
 position = Vector2(16, 0)
+explosion_order = 1
 
 [node name="ExplosionShapeTile7" parent="." unique_id=997786740 instance=ExtResource("2_nc8ob")]
 position = Vector2(-16, 16)
+explosion_order = 1
 
 [node name="ExplosionShapeTile8" parent="." unique_id=216365840 instance=ExtResource("2_nc8ob")]
 position = Vector2(0, 16)
+explosion_order = 1
 
 [node name="ExplosionShapeTile9" parent="." unique_id=563929258 instance=ExtResource("2_nc8ob")]
 position = Vector2(16, 16)
+explosion_order = 1

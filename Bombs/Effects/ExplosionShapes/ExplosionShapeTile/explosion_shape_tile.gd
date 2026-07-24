@@ -1,5 +1,7 @@
 extends Sprite2D
 
+@export var explosion_order: int = 0
+
 var multiplier: int = 0
 
 

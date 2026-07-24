@@ -10,19 +10,25 @@ script = ExtResource("1_byowd")
 
 [node name="ExplosionShapeTile2" parent="." unique_id=547166873 instance=ExtResource("2_ctnp1")]
 position = Vector2(0, -32)
+explosion_order = 2
 
 [node name="ExplosionShapeTile3" parent="." unique_id=1516100009 instance=ExtResource("2_ctnp1")]
 position = Vector2(0, -16)
+explosion_order = 1
 
 [node name="ExplosionShapeTile6" parent="." unique_id=1340328796 instance=ExtResource("2_ctnp1")]
 position = Vector2(0, 48)
+explosion_order = 3
 
 [node name="ExplosionShapeTile7" parent="." unique_id=1200317157 instance=ExtResource("2_ctnp1")]
 z_as_relative = false
 position = Vector2(0, -48)
+explosion_order = 3
 
 [node name="ExplosionShapeTile8" parent="." unique_id=1235757717 instance=ExtResource("2_ctnp1")]
 position = Vector2(0, 16)
+explosion_order = 1
 
 [node name="ExplosionShapeTile9" parent="." unique_id=1722527917 instance=ExtResource("2_ctnp1")]
 position = Vector2(0, 32)
+explosion_order = 2

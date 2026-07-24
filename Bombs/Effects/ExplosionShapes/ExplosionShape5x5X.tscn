@@ -11,24 +11,32 @@ script = ExtResource("1_8ulhb")
 
 [node name="ExplosionAreaTile2" parent="." unique_id=547166873 instance=ExtResource("2_sxu0x")]
 position = Vector2(-32, -32)
+explosion_order = 2
 
 [node name="ExplosionAreaTile3" parent="." unique_id=1516100009 instance=ExtResource("2_sxu0x")]
 position = Vector2(-16, -16)
+explosion_order = 1
 
 [node name="ExplosionAreaTile4" parent="." unique_id=1876009831 instance=ExtResource("2_sxu0x")]
 position = Vector2(-32, 32)
+explosion_order = 2
 
 [node name="ExplosionAreaTile5" parent="." unique_id=1585638559 instance=ExtResource("2_sxu0x")]
 position = Vector2(-16, 16)
+explosion_order = 1
 
 [node name="ExplosionAreaTile6" parent="." unique_id=1340328796 instance=ExtResource("2_sxu0x")]
 position = Vector2(32, -32)
+explosion_order = 2
 
 [node name="ExplosionAreaTile7" parent="." unique_id=1200317157 instance=ExtResource("2_sxu0x")]
 position = Vector2(16, -16)
+explosion_order = 1
 
 [node name="ExplosionAreaTile8" parent="." unique_id=1235757717 instance=ExtResource("2_sxu0x")]
 position = Vector2(16, 16)
+explosion_order = 1
 
 [node name="ExplosionAreaTile9" parent="." unique_id=1722527917 instance=ExtResource("2_sxu0x")]
 position = Vector2(32, 32)
+explosion_order = 2

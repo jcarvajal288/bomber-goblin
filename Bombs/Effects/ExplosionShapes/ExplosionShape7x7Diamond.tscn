@@ -10,72 +10,96 @@ script = ExtResource("1_h3xhp")
 
 [node name="ExplosionShapeTile2" parent="." unique_id=174059074 instance=ExtResource("2_ddrg0")]
 position = Vector2(16, 0)
+explosion_order = 1
 
 [node name="ExplosionShapeTile3" parent="." unique_id=927524959 instance=ExtResource("2_ddrg0")]
 position = Vector2(0, -16)
+explosion_order = 1
 
 [node name="ExplosionShapeTile4" parent="." unique_id=1050535043 instance=ExtResource("2_ddrg0")]
 position = Vector2(-16, 0)
+explosion_order = 1
 
 [node name="ExplosionShapeTile5" parent="." unique_id=806654050 instance=ExtResource("2_ddrg0")]
 position = Vector2(0, 16)
+explosion_order = 1
 
 [node name="ExplosionShapeTile6" parent="." unique_id=1849076456 instance=ExtResource("2_ddrg0")]
 position = Vector2(0, -32)
+explosion_order = 2
 
 [node name="ExplosionShapeTile7" parent="." unique_id=330659448 instance=ExtResource("2_ddrg0")]
 position = Vector2(0, -48)
+explosion_order = 3
 
 [node name="ExplosionShapeTile8" parent="." unique_id=898178438 instance=ExtResource("2_ddrg0")]
 position = Vector2(0, 32)
+explosion_order = 2
 
 [node name="ExplosionShapeTile9" parent="." unique_id=1844297856 instance=ExtResource("2_ddrg0")]
 position = Vector2(0, 48)
+explosion_order = 3
 
 [node name="ExplosionShapeTile10" parent="." unique_id=1821829785 instance=ExtResource("2_ddrg0")]
 position = Vector2(32, 0)
+explosion_order = 2
 
 [node name="ExplosionShapeTile11" parent="." unique_id=1178996260 instance=ExtResource("2_ddrg0")]
 position = Vector2(48, 0)
+explosion_order = 3
 
 [node name="ExplosionShapeTile12" parent="." unique_id=1177824974 instance=ExtResource("2_ddrg0")]
 position = Vector2(-32, 0)
+explosion_order = 2
 
 [node name="ExplosionShapeTile13" parent="." unique_id=492259243 instance=ExtResource("2_ddrg0")]
 position = Vector2(-48, 0)
+explosion_order = 3
 
 [node name="ExplosionShapeTile14" parent="." unique_id=1649659043 instance=ExtResource("2_ddrg0")]
 position = Vector2(-16, 16)
+explosion_order = 1
 
 [node name="ExplosionShapeTile18" parent="." unique_id=857372676 instance=ExtResource("2_ddrg0")]
 position = Vector2(-32, 16)
+explosion_order = 2
 
 [node name="ExplosionShapeTile19" parent="." unique_id=1962821178 instance=ExtResource("2_ddrg0")]
 position = Vector2(-16, 32)
+explosion_order = 2
 
 [node name="ExplosionShapeTile20" parent="." unique_id=1087735110 instance=ExtResource("2_ddrg0")]
 position = Vector2(16, 32)
+explosion_order = 2
 
 [node name="ExplosionShapeTile21" parent="." unique_id=458114049 instance=ExtResource("2_ddrg0")]
 position = Vector2(32, 16)
+explosion_order = 2
 
 [node name="ExplosionShapeTile22" parent="." unique_id=1523737215 instance=ExtResource("2_ddrg0")]
 position = Vector2(32, -16)
+explosion_order = 2
 
 [node name="ExplosionShapeTile23" parent="." unique_id=2133754756 instance=ExtResource("2_ddrg0")]
 position = Vector2(16, -32)
+explosion_order = 2
 
 [node name="ExplosionShapeTile24" parent="." unique_id=176145352 instance=ExtResource("2_ddrg0")]
 position = Vector2(-16, -32)
+explosion_order = 2
 
 [node name="ExplosionShapeTile25" parent="." unique_id=966914116 instance=ExtResource("2_ddrg0")]
 position = Vector2(-32, -16)
+explosion_order = 2
 
 [node name="ExplosionShapeTile15" parent="." unique_id=154666679 instance=ExtResource("2_ddrg0")]
 position = Vector2(16, 16)
+explosion_order = 1
 
 [node name="ExplosionShapeTile16" parent="." unique_id=1788599777 instance=ExtResource("2_ddrg0")]
 position = Vector2(16, -16)
+explosion_order = 1
 
 [node name="ExplosionShapeTile17" parent="." unique_id=1480411894 instance=ExtResource("2_ddrg0")]
 position = Vector2(-16, -16)
+explosion_order = 1

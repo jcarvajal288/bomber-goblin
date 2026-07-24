@@ -48,5 +48,5 @@ NICE TO HAVES
     x score labels on individual things exploding
     - backgrounds for the levels
     x add 7x7 diamond explosion shape
-    - stagger explosion tile explosions inner to outer
+    x stagger explosion tile explosions inner to outer
 
