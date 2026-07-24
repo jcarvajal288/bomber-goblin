@@ -21,4 +21,11 @@ func start_level(level_index: int) -> void:
 
 
 func _on_victory() -> void:
-	print("victory")
+	pause_game(true)
+
+
+func pause_game(should_pause: bool) -> void:
+	if should_pause:
+		set_deferred("process_mode", Node.PROCESS_MODE_DISABLED)
+	else:
+		set_deferred("process_mode", Node.PROCESS_MODE_INHERIT)

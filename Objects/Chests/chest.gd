@@ -11,4 +11,4 @@ func explode(multiplier: int) -> void:
 	super(multiplier)
 	Sounds.play_sound.emit(Sounds.SoundEffect.TREASURE_EXPLOSION, global_position)
 	if Global.chests_left <= 0:
-		Global.signal_vectory.emit()
+		Global.signal_victory.emit()
