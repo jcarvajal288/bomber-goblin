@@ -5,5 +5,5 @@ signal play_sound(sound_effect: SoundEffect, sound_position: Vector2)
 @warning_ignore_restore("unused_signal")
 
 enum SoundEffect {
-	EXPLOSION_5,
+	BOMB_EXPLOSION,
 }
