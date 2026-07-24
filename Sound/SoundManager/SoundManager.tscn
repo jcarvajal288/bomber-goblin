@@ -1,13 +1,16 @@
 [gd_scene format=3 uid="uid://cfej23ppjlb8e"]
 
 [ext_resource type="Script" uid="uid://bhxywlf1scrg4" path="res://Sound/SoundManager/sound_manager.gd" id="1_c3v5k"]
-[ext_resource type="AudioStream" uid="uid://dkibjy6f8rkgo" path="res://Sound/Explosions/Bomb_Explosion/explosion_5.wav" id="2_3al8h"]
-[ext_resource type="AudioStream" uid="uid://c5edsbma10b2k" path="res://Sound/Explosions/Bomb_Explosion/explosion_5b.wav" id="3_uaq4g"]
-[ext_resource type="AudioStream" uid="uid://bw4xafrf22dql" path="res://Sound/Explosions/Bomb_Explosion/explosion_5_03.wav" id="4_6bp63"]
-[ext_resource type="AudioStream" uid="uid://bcka13nak2qjd" path="res://Sound/Explosions/Bomb_Explosion/explosion_5_05.wav" id="5_2bttg"]
-[ext_resource type="AudioStream" uid="uid://dbpjw5xa3aw1n" path="res://Sound/Explosions/Bomb_Explosion/explosion_5_06.wav" id="6_lxery"]
-[ext_resource type="AudioStream" uid="uid://culiijgc81r3g" path="res://Sound/Explosions/Bomb_Explosion/explosion_5_08.wav" id="7_oukoc"]
-[ext_resource type="AudioStream" uid="uid://bluamh4ix5tr1" path="res://Sound/Explosions/Bomb_Explosion/explosion_05_09.wav" id="8_2rb7f"]
+[ext_resource type="AudioStream" uid="uid://dkibjy6f8rkgo" path="res://Sound/Explosions/BombExplosion/explosion_5.wav" id="2_3al8h"]
+[ext_resource type="AudioStream" uid="uid://c5edsbma10b2k" path="res://Sound/Explosions/BombExplosion/explosion_5b.wav" id="3_uaq4g"]
+[ext_resource type="AudioStream" uid="uid://bw4xafrf22dql" path="res://Sound/Explosions/BombExplosion/explosion_5_03.wav" id="4_6bp63"]
+[ext_resource type="AudioStream" uid="uid://bcka13nak2qjd" path="res://Sound/Explosions/BombExplosion/explosion_5_05.wav" id="5_2bttg"]
+[ext_resource type="AudioStream" uid="uid://dbpjw5xa3aw1n" path="res://Sound/Explosions/BombExplosion/explosion_5_06.wav" id="6_lxery"]
+[ext_resource type="AudioStream" uid="uid://culiijgc81r3g" path="res://Sound/Explosions/BombExplosion/explosion_5_08.wav" id="7_oukoc"]
+[ext_resource type="AudioStream" uid="uid://bluamh4ix5tr1" path="res://Sound/Explosions/BombExplosion/explosion_05_09.wav" id="8_2rb7f"]
+[ext_resource type="AudioStream" uid="uid://dhu51ukftitmx" path="res://Sound/Explosions/BarrelExplosion/barrel_explosion_1.wav" id="9_6bp63"]
+[ext_resource type="AudioStream" uid="uid://bwpj2gasyvt2d" path="res://Sound/Explosions/BarrelExplosion/barrel_explosion_2.wav" id="10_2bttg"]
+[ext_resource type="AudioStream" uid="uid://djlnafkgd7e1f" path="res://Sound/Explosions/BarrelExplosion/barrel_explosion_3.wav" id="11_lxery"]
 
 [sub_resource type="AudioStreamRandomizer" id="AudioStreamRandomizer_fuhmt"]
 streams_count = 7
@@ -19,9 +22,19 @@ stream_4/stream = ExtResource("6_lxery")
 stream_5/stream = ExtResource("7_oukoc")
 stream_6/stream = ExtResource("8_2rb7f")
 
+[sub_resource type="AudioStreamRandomizer" id="AudioStreamRandomizer_p6ya2"]
+streams_count = 3
+stream_0/stream = ExtResource("9_6bp63")
+stream_1/stream = ExtResource("10_2bttg")
+stream_2/stream = ExtResource("11_lxery")
+
 [node name="SoundManager" type="Node" unique_id=2086895508]
 script = ExtResource("1_c3v5k")
 
 [node name="BombExplosion" type="AudioStreamPlayer2D" parent="." unique_id=2104945875]
 stream = SubResource("AudioStreamRandomizer_fuhmt")
+max_polyphony = 4
+
+[node name="BarrelExplosion" type="AudioStreamPlayer2D" parent="." unique_id=1732317688]
+stream = SubResource("AudioStreamRandomizer_p6ya2")
 max_polyphony = 4
