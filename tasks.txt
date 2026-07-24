@@ -33,6 +33,9 @@ x dwarf fighter can kill the player
 x walls block explosions
 _ respawn sapper on death
 
+BUGS:
+    - red barrels aren't exploding
+
 
 NOTES
     - goal is to destroy all treasure chests in the stage

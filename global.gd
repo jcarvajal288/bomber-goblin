@@ -8,9 +8,9 @@ enum RenderOrder {
 	FLOOR = 1,
 	WALL = 2,
 	INDICATOR = 3,
-	ITEM = 4,
-	PLAYER = 5,
-	SCORE_TOAST = 10
+	ITEM = 8,
+	PLAYER = 10,
+	SCORE_TOAST = 20
 }
 
 enum CollisionLayer {

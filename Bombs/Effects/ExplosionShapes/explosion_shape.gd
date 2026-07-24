@@ -12,6 +12,7 @@ signal explosion_finished
 func tick_up_color() -> void:
 	for child in get_children():
 		child.frame += 1
+		child.z_index += 1
 
 
 func _process(delta: float) -> void:
