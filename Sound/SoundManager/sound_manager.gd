@@ -23,3 +23,5 @@ func _on_play_sound(sound_effect: Sounds.SoundEffect, sound_position: Vector2) -
 		play_sound_at_position($DwarfFighterAttack, sound_position)
 	elif sound_effect == Sounds.SoundEffect.DWARF_FIGHTER_DEATH: 
 		play_sound_at_position($DwarfFighterDeath, sound_position)
+	elif sound_effect == Sounds.SoundEffect.SAPPER_DEATH: 
+		play_sound_at_position($SapperDeath, sound_position)

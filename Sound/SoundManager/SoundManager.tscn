@@ -19,6 +19,7 @@
 [ext_resource type="AudioStream" uid="uid://bowrnkxmw65s0" path="res://Sound/DwarfFighter/01_Fighter_Attack_1.wav" id="17_amrxa"]
 [ext_resource type="AudioStream" uid="uid://bsy63ultj3n3b" path="res://Sound/DwarfFighter/02_Fighter_Attack_2.wav" id="18_eo1sm"]
 [ext_resource type="AudioStream" uid="uid://dftvxttmbkpyu" path="res://Sound/DwarfFighter/05_Fighter_Death.wav" id="19_eo1sm"]
+[ext_resource type="AudioStream" uid="uid://cudjmtegsj0ul" path="res://Sound/Sapper/05_Small_Humanoid_Death.wav" id="20_12tir"]
 
 [sub_resource type="AudioStreamRandomizer" id="AudioStreamRandomizer_fuhmt"]
 streams_count = 7
@@ -78,3 +79,6 @@ max_polyphony = 2
 
 [node name="DwarfFighterDeath" type="AudioStreamPlayer2D" parent="." unique_id=1929458668]
 stream = ExtResource("19_eo1sm")
+
+[node name="SapperDeath" type="AudioStreamPlayer2D" parent="." unique_id=664339828]
+stream = ExtResource("20_12tir")
