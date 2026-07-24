@@ -27,10 +27,11 @@ signal respawn_player
 signal restart_stage
 signal show_toast(text: String, toast_position: Vector2, color: Color)
 signal signal_next_bomb_shape(next_bomb_shape: int)
+signal signal_defeat
+signal signal_victory
 signal spawn_bomb(bomb_position: Vector2)
 signal spawn_big_explosion(bomb_position: Vector2)
 signal spawn_small_explosion(explosion_position: Vector2)
-signal signal_victory
 @warning_ignore_restore("unused_signal")
 
 func wait_for_sec(secs: float) -> void:

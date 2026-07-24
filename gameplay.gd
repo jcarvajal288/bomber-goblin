@@ -1,6 +1,6 @@
 extends Node
 
-@export var VICTORY_SCENE: PackedScene = preload("res://UI/VictoryScreen/VictoryScreen.tscn")
+@export var END_SCREEN_SCENE: PackedScene = preload("res://UI/EndScreen/EndScreen.tscn")
 
 @export var levels: Array[PackedScene] = []
 @export var starting_level = 0
@@ -11,6 +11,7 @@ var current_level: Node = null
 func _ready() -> void:
 	$BombSpawner.set_new_bomb_shape()
 	Global.signal_victory.connect(_on_victory)
+	Global.signal_defeat.connect(_on_defeat)
 	Global.restart_stage.connect(_restart_stage)
 	start_level(starting_level)
 
@@ -26,8 +27,17 @@ func start_level(level_index: int) -> void:
 func _on_victory() -> void:
 	await Global.wait_for_sec(1.0)
 	pause_game(true)
-	var victory_screen = VICTORY_SCENE.instantiate()
+	var victory_screen = END_SCREEN_SCENE.instantiate()
+	victory_screen.did_player_win = true
 	add_child(victory_screen)
+
+
+func _on_defeat() -> void:
+	await Global.wait_for_sec(1.0)
+	pause_game(true)
+	var defeat_screen = END_SCREEN_SCENE.instantiate()
+	defeat_screen.did_player_win = false
+	add_child(defeat_screen)
 
 
 func pause_game(should_pause: bool) -> void:

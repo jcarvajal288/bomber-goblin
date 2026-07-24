@@ -1,23 +1,23 @@
 [gd_scene format=3 uid="uid://diqw7wxahblr0"]
 
-[ext_resource type="Script" uid="uid://b1ov408afsf14" path="res://UI/VictoryScreen/victory_screen.gd" id="1_ebelo"]
-[ext_resource type="FontFile" uid="uid://oygny1aq118x" path="res://UI/_fonts/High_Birth.ttf" id="1_rwflm"]
+[ext_resource type="Script" uid="uid://b1ov408afsf14" path="res://UI/EndScreen/end_screen.gd" id="1_a630f"]
+[ext_resource type="FontFile" uid="uid://oygny1aq118x" path="res://UI/_fonts/High_Birth.ttf" id="2_q8mru"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_fuhmt"]
-font = ExtResource("1_rwflm")
+font = ExtResource("2_q8mru")
 
 [sub_resource type="LabelSettings" id="LabelSettings_r0tkx"]
-font = ExtResource("1_rwflm")
+font = ExtResource("2_q8mru")
 font_size = 9
 
 [sub_resource type="LabelSettings" id="LabelSettings_p6ya2"]
-font = ExtResource("1_rwflm")
+font = ExtResource("2_q8mru")
 font_size = 9
 
-[node name="VictoryScreen" type="CanvasLayer" unique_id=351782473]
+[node name="EndScreen" type="CanvasLayer" unique_id=351782473]
 process_mode = 3
 layer = 10
-script = ExtResource("1_ebelo")
+script = ExtResource("1_a630f")
 
 [node name="ColorRect" type="ColorRect" parent="." unique_id=1944865626]
 anchors_preset = 15
