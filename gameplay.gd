@@ -11,6 +11,7 @@ var current_level: Node = null
 func _ready() -> void:
 	$BombSpawner.set_new_bomb_shape()
 	Global.signal_victory.connect(_on_victory)
+	Global.restart_stage.connect(_restart_stage)
 	start_level(starting_level)
 
 
@@ -34,3 +35,8 @@ func pause_game(should_pause: bool) -> void:
 		set_deferred("process_mode", Node.PROCESS_MODE_DISABLED)
 	else:
 		set_deferred("process_mode", Node.PROCESS_MODE_INHERIT)
+
+
+func _restart_stage() -> void:
+	pause_game(false)
+	start_level(starting_level)
