@@ -3,11 +3,14 @@
 [ext_resource type="PackedScene" uid="uid://bpj2g5ebv3n3y" path="res://Actors/Sapper/Sapper.tscn" id="1_ig7tw"]
 [ext_resource type="Script" uid="uid://bteyjq40tvdtc" path="res://main.gd" id="1_lquwl"]
 [ext_resource type="PackedScene" uid="uid://wx1tlmk4t8cr" path="res://Levels/MountainStronghold/Level1.tscn" id="2_0xm2m"]
+[ext_resource type="PackedScene" uid="uid://cfej23ppjlb8e" path="res://Sound/SoundManager/SoundManager.tscn" id="2_7mycd"]
 [ext_resource type="PackedScene" uid="uid://dqwy4kavgmryr" path="res://Bombs/BombSpawner/BombSpawner.tscn" id="3_h2yge"]
 [ext_resource type="PackedScene" uid="uid://vtrtgf17vece" path="res://UI/UIFrame/UIFrame.tscn" id="5_lquwl"]
 
 [node name="Main" type="Node2D" unique_id=352477210]
 script = ExtResource("1_lquwl")
+
+[node name="SoundManager" parent="." unique_id=2086895508 instance=ExtResource("2_7mycd")]
 
 [node name="Sapper" parent="." unique_id=1352799463 instance=ExtResource("1_ig7tw")]
 z_index = 5

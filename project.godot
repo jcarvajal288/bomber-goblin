@@ -19,6 +19,7 @@ config/icon="res://icon.svg"
 
 Global="*uid://cmhshwp0gcu10"
 ScoreTracker="*uid://cu820kg3fdcvh"
+Sounds="*uid://dmq51gvrecs0q"
 
 [display]
 
