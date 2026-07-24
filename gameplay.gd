@@ -1,5 +1,7 @@
 extends Node
 
+@export var VICTORY_SCENE: PackedScene = preload("res://UI/VictoryScreen/VictoryScreen.tscn")
+
 @export var levels: Array[PackedScene] = []
 @export var starting_level = 0
 
@@ -23,6 +25,8 @@ func start_level(level_index: int) -> void:
 func _on_victory() -> void:
 	await Global.wait_for_sec(1.0)
 	pause_game(true)
+	var victory_screen = VICTORY_SCENE.instantiate()
+	add_child(victory_screen)
 
 
 func pause_game(should_pause: bool) -> void:

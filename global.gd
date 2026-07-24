@@ -10,7 +10,9 @@ enum RenderOrder {
 	INDICATOR = 3,
 	ITEM = 8,
 	PLAYER = 10,
-	SCORE_TOAST = 20
+	SCORE_TOAST = 20,
+	UI_FRAME = 30,
+	META_SCREENS = 40,
 }
 
 enum CollisionLayer {
@@ -29,8 +31,8 @@ signal spawn_small_explosion(explosion_position: Vector2)
 signal signal_victory
 @warning_ignore_restore("unused_signal")
 
-func wait_for_sec(secs: float) -> Signal:
-	return get_tree().create_timer(secs).timeout
+func wait_for_sec(secs: float) -> void:
+	await get_tree().create_timer(secs).timeout
 
 
 var chests_left: int = 0
