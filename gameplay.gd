@@ -21,6 +21,7 @@ func start_level(level_index: int) -> void:
 
 
 func _on_victory() -> void:
+	await Global.wait_for_sec(1.0)
 	pause_game(true)
 
 
