@@ -1,0 +1,58 @@
+[gd_scene format=3 uid="uid://doabdmni25q4x"]
+
+[ext_resource type="Script" uid="uid://bkxja553n8k32" path="res://UI/PauseScreen/pause_screen.gd" id="1_0ahhb"]
+[ext_resource type="FontFile" uid="uid://oygny1aq118x" path="res://UI/_fonts/High_Birth.ttf" id="1_uq3sv"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_fuhmt"]
+font = ExtResource("1_uq3sv")
+font_size = 18
+
+[sub_resource type="LabelSettings" id="LabelSettings_p6ya2"]
+font = ExtResource("1_uq3sv")
+font_size = 9
+
+[sub_resource type="LabelSettings" id="LabelSettings_r0tkx"]
+font = ExtResource("1_uq3sv")
+font_size = 9
+
+[node name="PauseScreen" type="CanvasLayer" unique_id=644226611]
+process_mode = 3
+process_priority = 10
+script = ExtResource("1_0ahhb")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=400626165]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 0.27450982)
+
+[node name="CenterContainer" type="CenterContainer" parent="." unique_id=871353565]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="CenterContainer" unique_id=2092292043]
+layout_mode = 2
+alignment = 1
+
+[node name="PausedLabel" type="Label" parent="CenterContainer/VBoxContainer" unique_id=680492546]
+layout_mode = 2
+text = "Paused"
+label_settings = SubResource("LabelSettings_fuhmt")
+horizontal_alignment = 1
+
+[node name="ResumeLabel" type="Label" parent="CenterContainer/VBoxContainer" unique_id=717177452]
+layout_mode = 2
+text = "Press 'Esc' to resume"
+label_settings = SubResource("LabelSettings_p6ya2")
+horizontal_alignment = 1
+
+[node name="QuitLabel" type="Label" parent="CenterContainer/VBoxContainer" unique_id=1770036013]
+layout_mode = 2
+text = "Press 'Q' to Quit to Menu"
+label_settings = SubResource("LabelSettings_r0tkx")
+horizontal_alignment = 1

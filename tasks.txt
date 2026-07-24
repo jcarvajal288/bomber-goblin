@@ -39,7 +39,9 @@ x display score in victory screen
 x defeat screen when timer expires
 x Make main menu and be able to start and quit game
 x Allow quitting back to main menu in end screens
-_ Make pause screen
+x Make pause screen
+_ Build level 2
+_ Build level 3
 
 
 
