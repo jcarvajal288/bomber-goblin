@@ -17,6 +17,10 @@ font_size = 9
 font = ExtResource("1_ap5vu")
 font_size = 9
 
+[sub_resource type="LabelSettings" id="LabelSettings_yama0"]
+font = ExtResource("1_ap5vu")
+font_size = 9
+
 [sub_resource type="LabelSettings" id="LabelSettings_se1jv"]
 font = ExtResource("1_ap5vu")
 font_size = 9
@@ -399,6 +403,11 @@ layout_mode = 2
 text = "Level 2: Interior"
 label_settings = SubResource("LabelSettings_r0tkx")
 
+[node name="Level3Label" type="Label" parent="LevelOptionsContainer" unique_id=118223794]
+layout_mode = 2
+text = "Level 3: Rampart"
+label_settings = SubResource("LabelSettings_yama0")
+
 [node name="BackLabel" type="Label" parent="LevelOptionsContainer" unique_id=1174984058]
 layout_mode = 2
 text = "Back to Main Menu"
@@ -409,4 +418,4 @@ position = Vector2(332.65, 226)
 scale = Vector2(10, 10)
 sprite_frames = SubResource("SpriteFrames_fuhmt")
 autoplay = "default"
-frame_progress = 0.93478596
+frame_progress = 0.7878406

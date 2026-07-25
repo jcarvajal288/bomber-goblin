@@ -5,12 +5,13 @@
 [ext_resource type="PackedScene" uid="uid://wx1tlmk4t8cr" path="res://Levels/MountainStronghold/Level1.tscn" id="3_0m7cd"]
 [ext_resource type="PackedScene" uid="uid://cfej23ppjlb8e" path="res://Sound/SoundManager/SoundManager.tscn" id="4_2ihbs"]
 [ext_resource type="PackedScene" uid="uid://dly4qjj06b056" path="res://Levels/MountainStronghold/Interior.tscn" id="4_fbudy"]
+[ext_resource type="PackedScene" uid="uid://dwkodh5wu8a04" path="res://Levels/MountainStronghold/Rampart.tscn" id="5_0m7cd"]
 [ext_resource type="PackedScene" uid="uid://dqwy4kavgmryr" path="res://Bombs/BombSpawner/BombSpawner.tscn" id="5_1qy1k"]
 [ext_resource type="PackedScene" uid="uid://vtrtgf17vece" path="res://UI/UIFrame/UIFrame.tscn" id="6_3n40r"]
 
 [node name="Gameplay" type="Node" unique_id=1450791140]
 script = ExtResource("1_cbffv")
-levels = Array[PackedScene]([ExtResource("2_fbudy"), ExtResource("3_0m7cd"), ExtResource("4_fbudy")])
+levels = Array[PackedScene]([ExtResource("2_fbudy"), ExtResource("3_0m7cd"), ExtResource("4_fbudy"), ExtResource("5_0m7cd")])
 starting_level = 2
 
 [node name="SoundManager" parent="." unique_id=2086895508 instance=ExtResource("4_2ihbs")]

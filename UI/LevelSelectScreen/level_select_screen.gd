@@ -7,11 +7,13 @@ const GAMEPLAY_SCENE: PackedScene = preload("res://gameplay.tscn")
 
 @onready var level_1_option = $LevelOptionsContainer/Level1Label
 @onready var level_2_option = $LevelOptionsContainer/Level2Label
+@onready var level_3_option = $LevelOptionsContainer/Level3Label
 @onready var back_to_main_menu_option = $LevelOptionsContainer/BackLabel
 
 @onready var menu_options = [
 	level_1_option,
 	level_2_option,
+	level_3_option,
 	back_to_main_menu_option
 ]
 
@@ -38,7 +40,7 @@ func change_selection() -> void:
 
 
 func perform_action() -> void:
-	if selection == 2:
+	if selection == 3:
 		get_tree().change_scene_to_file(MAIN_MENU_SCENE)
 	else:
 		start_game()
