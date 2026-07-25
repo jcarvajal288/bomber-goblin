@@ -30,7 +30,9 @@ stretch_mode = 2
 
 [node name="ScoreMarginContainer" type="MarginContainer" parent="PanelContainer" unique_id=486195320]
 layout_mode = 2
-theme_override_constants/margin_left = 68
+size_flags_horizontal = 0
+size_flags_vertical = 0
+theme_override_constants/margin_left = 87
 theme_override_constants/margin_top = 18
 
 [node name="ScoreLabel" type="Label" parent="PanelContainer/ScoreMarginContainer" unique_id=879861496]
@@ -38,7 +40,7 @@ z_index = 1
 layout_mode = 2
 size_flags_horizontal = 0
 size_flags_vertical = 0
-text = "0000000"
+text = "000000000000"
 label_settings = ExtResource("2_diwxs")
 horizontal_alignment = 2
 
@@ -47,7 +49,7 @@ z_index = 1
 layout_mode = 2
 size_flags_horizontal = 0
 size_flags_vertical = 0
-theme_override_constants/margin_left = 187
+theme_override_constants/margin_left = 241
 theme_override_constants/margin_top = 18
 
 [node name="ChestsLabel" type="Label" parent="PanelContainer/ChestsMarginContainer" unique_id=1386578466]
@@ -60,7 +62,7 @@ label_settings = ExtResource("2_diwxs")
 layout_mode = 2
 size_flags_horizontal = 0
 size_flags_vertical = 0
-theme_override_constants/margin_left = 263
+theme_override_constants/margin_left = 317
 theme_override_constants/margin_top = 18
 
 [node name="TimerLabel" type="Label" parent="PanelContainer/TimerMarginContainer" unique_id=873690629]
@@ -72,7 +74,7 @@ label_settings = ExtResource("2_diwxs")
 layout_mode = 2
 size_flags_horizontal = 0
 size_flags_vertical = 0
-theme_override_constants/margin_left = 352
+theme_override_constants/margin_left = 405
 theme_override_constants/margin_top = 18
 
 [node name="EnemyLabel" type="Label" parent="PanelContainer/EnemyMarginContainer" unique_id=352654267]
