@@ -10,7 +10,7 @@ var did_player_win: bool = true
 
 func _ready() -> void:
 	if not did_player_win:
-		win_status_label.text = "Game Over!"
+		win_status_label.text = "Time's Up!"
 	score_label.text = "Score: %d" % ScoreTracker.score
 
 
