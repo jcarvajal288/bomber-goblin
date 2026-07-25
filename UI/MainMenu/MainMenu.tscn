@@ -183,12 +183,14 @@ autoplay = "default"
 
 [node name="Title" type="Label" parent="." unique_id=116624318]
 texture_filter = 1
-offset_left = 108.0
-offset_top = 40.0
-offset_right = 353.0
-offset_bottom = 84.0
-text = "Goblin Sapper"
+anchors_preset = 10
+anchor_right = 1.0
+offset_bottom = 130.0
+grow_horizontal = 2
+text = "Bomber Goblin"
 label_settings = SubResource("LabelSettings_fuhmt")
+horizontal_alignment = 1
+vertical_alignment = 1
 
 [node name="MenuOptionsContainer" type="VBoxContainer" parent="." unique_id=489230835]
 anchors_preset = 11

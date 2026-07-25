@@ -2,7 +2,7 @@ extends CanvasLayer
 
 var selection: int = 0
 
-const GAMEPLAY_SCENE: PackedScene = preload("res://gameplay.tscn")
+const LEVEL_SELECT_SCENE: PackedScene = preload("res://UI/LevelSelectScreen/LevelSelectScreen.tscn")
 
 @onready var start_option = $MenuOptionsContainer/Start
 @onready var quit_option = $MenuOptionsContainer/Quit
@@ -35,11 +35,7 @@ func change_selection() -> void:
 
 func perform_action() -> void:
 	if selection == 0:
-		start_game()
+		get_tree().change_scene_to_packed(LEVEL_SELECT_SCENE)
 	elif selection == 1:
 		get_tree().quit()
-
-
-func start_game() -> void:
-	get_tree().change_scene_to_packed(GAMEPLAY_SCENE)
 		

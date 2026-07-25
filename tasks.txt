@@ -41,7 +41,8 @@ x Make main menu and be able to start and quit game
 x Allow quitting back to main menu in end screens
 x Make pause screen
 x Make Dwarves only aggro the player when they are reasonably close
-_ Build level 2
+x Build level 2
+x Level selection screen
 _ Build level 3
 
 
