@@ -20,6 +20,7 @@
 [ext_resource type="AudioStream" uid="uid://bsy63ultj3n3b" path="res://Sound/DwarfFighter/02_Fighter_Attack_2.wav" id="18_eo1sm"]
 [ext_resource type="AudioStream" uid="uid://dftvxttmbkpyu" path="res://Sound/DwarfFighter/05_Fighter_Death.wav" id="19_eo1sm"]
 [ext_resource type="AudioStream" uid="uid://cudjmtegsj0ul" path="res://Sound/Sapper/05_Small_Humanoid_Death.wav" id="20_12tir"]
+[ext_resource type="AudioStream" uid="uid://dv1v1owowp3ho" path="res://Sound/Sapper/bomb_blip.wav" id="21_6gaxk"]
 
 [sub_resource type="AudioStreamRandomizer" id="AudioStreamRandomizer_fuhmt"]
 streams_count = 7
@@ -54,6 +55,11 @@ streams_count = 2
 stream_0/stream = ExtResource("17_amrxa")
 stream_1/stream = ExtResource("18_eo1sm")
 
+[sub_resource type="AudioStreamRandomizer" id="AudioStreamRandomizer_rvltn"]
+random_pitch = 1.3348398
+streams_count = 1
+stream_0/stream = ExtResource("21_6gaxk")
+
 [node name="SoundManager" type="Node" unique_id=2086895508]
 script = ExtResource("1_c3v5k")
 
@@ -82,3 +88,7 @@ stream = ExtResource("19_eo1sm")
 
 [node name="SapperDeath" type="AudioStreamPlayer2D" parent="." unique_id=664339828]
 stream = ExtResource("20_12tir")
+
+[node name="LightBomb" type="AudioStreamPlayer2D" parent="." unique_id=1610128027]
+stream = SubResource("AudioStreamRandomizer_rvltn")
+volume_db = -16.589

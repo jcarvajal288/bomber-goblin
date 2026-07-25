@@ -10,6 +10,7 @@ var has_exploded = false
 func _ready() -> void:
 	$Timer.timeout.connect(tick_down)
 	z_index = Global.RenderOrder.ITEM
+	Sounds.play_sound.emit(Sounds.SoundEffect.LIGHT_BOMB, global_position)
 
 
 func set_explosion_shape(ea: Node2D) -> void:
