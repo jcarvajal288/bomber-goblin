@@ -40,7 +40,7 @@ x defeat screen when timer expires
 x Make main menu and be able to start and quit game
 x Allow quitting back to main menu in end screens
 x Make pause screen
-_ Make Dwarves only aggro the player when they have line of sight
+x Make Dwarves only aggro the player when they are reasonably close
 _ Build level 2
 _ Build level 3
 

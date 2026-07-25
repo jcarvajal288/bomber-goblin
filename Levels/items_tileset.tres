@@ -1,0 +1,25 @@
+[gd_resource type="TileSet" format=3 uid="uid://co4t48dw8i0go"]
+
+[ext_resource type="PackedScene" uid="uid://cr38yfavp4gwt" path="res://Objects/Barrel/Barrel.tscn" id="1_q4tf2"]
+[ext_resource type="PackedScene" uid="uid://c36nc13sokl4x" path="res://Objects/Barrel/RedBarrel.tscn" id="2_3kflg"]
+[ext_resource type="PackedScene" uid="uid://jnq1djtk2fdn" path="res://Objects/Chests/Chest1/Chest1.tscn" id="3_qb8mk"]
+[ext_resource type="PackedScene" uid="uid://c7xsmf2q4haoy" path="res://Objects/Chests/Chest2/Chest2.tscn" id="4_wsjsp"]
+[ext_resource type="PackedScene" uid="uid://84bbdjahx2t4" path="res://Objects/Chests/Chest3/Chest3.tscn" id="5_wd2yv"]
+[ext_resource type="PackedScene" uid="uid://dpjj5e11bqe1v" path="res://Objects/Chests/Chest4/Chest4.tscn" id="6_fkfum"]
+[ext_resource type="PackedScene" uid="uid://bokrn6chgjn5s" path="res://Objects/Chests/Chest5/Chest5.tscn" id="7_rxgd5"]
+[ext_resource type="PackedScene" uid="uid://cgk1uh86fxvlp" path="res://Objects/Chests/Chest6/Chest6.tscn" id="8_hfy4b"]
+[ext_resource type="PackedScene" uid="uid://4h4cxqh8tc2" path="res://Actors/DwarfFighter/DwarfFighter.tscn" id="9_3kflg"]
+
+[sub_resource type="TileSetScenesCollectionSource" id="TileSetScenesCollectionSource_0tpqj"]
+scenes/1/scene = ExtResource("1_q4tf2")
+scenes/2/scene = ExtResource("2_3kflg")
+scenes/3/scene = ExtResource("3_qb8mk")
+scenes/4/scene = ExtResource("4_wsjsp")
+scenes/5/scene = ExtResource("5_wd2yv")
+scenes/6/scene = ExtResource("6_fkfum")
+scenes/7/scene = ExtResource("7_rxgd5")
+scenes/8/scene = ExtResource("8_hfy4b")
+scenes/9/scene = ExtResource("9_3kflg")
+
+[resource]
+sources/0 = SubResource("TileSetScenesCollectionSource_0tpqj")

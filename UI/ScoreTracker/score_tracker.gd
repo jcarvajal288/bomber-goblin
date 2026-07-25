@@ -25,16 +25,16 @@ func _add_score(amount: int, score_position: Vector2, multiplier: int) -> void:
 	toast.text = str(adjusted_amount)
 	if multiplier <= -1:
 		toast.modulate = Color.MAGENTA
-	elif multiplier == 0:
-		toast.modulate = Color.GREEN
-	elif multiplier == 1:
-		toast.modulate = Color.YELLOW
-	elif multiplier == 2:
-		toast.modulate = Color.ORANGE
-	elif multiplier == 3:
+	elif multiplier >= 8:
+		toast.modulate = Color.DEEP_PINK
+	elif multiplier >= 6:
 		toast.modulate = Color.RED
+	elif multiplier >= 4:
+		toast.modulate = Color.ORANGE
+	elif multiplier >= 2:
+		toast.modulate = Color.YELLOW
 	else:
-		toast.modulate = Color.CRIMSON
+		toast.modulate = Color.GREEN
 	add_child(toast)
 	toast.reset_size()
 	var half_size_offset = toast.size / 2
