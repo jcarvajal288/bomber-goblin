@@ -19,6 +19,7 @@ func _process(_delta: float) -> void:
 		Global.restart_stage.emit()
 		queue_free()
 	elif Input.is_action_just_pressed("ui_cancel"):
+		ScoreTracker.reset_scores()
 		get_tree().change_scene_to_file(MAIN_MENU_PATH)
 
 

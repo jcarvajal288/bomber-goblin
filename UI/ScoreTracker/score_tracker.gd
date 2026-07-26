@@ -12,7 +12,7 @@ signal add_mult(amount)
 
 func _ready() -> void:
 	Global.show_toast.connect(_show_toast)
-	Global.restart_stage.connect(_restart_stage)
+	Global.restart_stage.connect(reset_scores)
 	add_score.connect(_add_score)
 	add_mult.connect(_add_mult)
 	$MultTimer.timeout.connect(func (): mult = 0)
@@ -37,17 +37,27 @@ func _add_score(amount: int, score_position: Vector2, multiplier: int) -> void:
 
 func get_color_for_multiplier(multiplier: int) -> Color:
 	if multiplier <= -1:
+		return Color.BLUE_VIOLET
+	elif multiplier >= 64:
+		return Color.PURPLE
+	elif multiplier >= 32:
 		return Color.MAGENTA
-	elif multiplier >= 8:
-		return Color.DEEP_PINK
-	elif multiplier >= 6:
+	elif multiplier >= 24:
 		return Color.RED
-	elif multiplier >= 4:
+	elif multiplier >= 16:
+		return Color.ORANGE_RED
+	elif multiplier >= 12:
 		return Color.ORANGE
-	elif multiplier >= 2:
+	elif multiplier >= 10:
+		return Color.TOMATO
+	elif multiplier >= 8:
 		return Color.YELLOW
-	else:
+	elif multiplier >= 6:
+		return Color.GREEN_YELLOW
+	elif multiplier >= 4:
 		return Color.GREEN
+	else:
+		return Color.WHITE
 
 
 func _show_toast(text: String, toast_position, color: Color) -> void:
@@ -61,7 +71,7 @@ func _show_toast(text: String, toast_position, color: Color) -> void:
 	toast.start()
 
 
-func _restart_stage() -> void:
+func reset_scores() -> void:
 	score = 0
 	mult = 0
 

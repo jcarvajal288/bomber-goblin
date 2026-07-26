@@ -7,4 +7,5 @@ func _process(_delta: float) -> void:
 		Global.pause_game.emit(false)
 		queue_free()
 	elif Input.is_action_just_pressed("quit_to_menu"):
+		ScoreTracker.reset_scores()
 		get_tree().change_scene_to_file(MAIN_MENU_PATH)
