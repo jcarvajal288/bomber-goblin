@@ -34,6 +34,7 @@ func explode(multiplier: int) -> void:
 	Global.spawn_big_explosion.emit(global_position)
 	explosion_shape.explode(multiplier)
 	ScoreTracker.add_score.emit(data.base_value, global_position, multiplier)
+	ScoreTracker.add_mult.emit(multiplier)
 	Sounds.play_sound.emit(Sounds.SoundEffect.BOMB_EXPLOSION, global_position)
 
 

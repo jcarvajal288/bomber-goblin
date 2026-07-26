@@ -3,14 +3,17 @@ extends Node2D
 const SCORE_TOAST_SCENE = preload("res://UI/ScoreToast/ScoreToast.tscn")
 
 @onready var score: = 0
+@onready var mult: = 0
 
 signal add_score(amount: int, score_position: Vector2, multiplier: int)
+signal add_mult(amount)
 
 
 func _ready() -> void:
 	Global.show_toast.connect(_show_toast)
 	Global.restart_stage.connect(_restart_stage)
 	add_score.connect(_add_score)
+	add_mult.connect(_add_mult)
 	
 
 
@@ -55,3 +58,8 @@ func _show_toast(text: String, toast_position, color: Color) -> void:
 
 func _restart_stage() -> void:
 	score = 0
+
+
+func _add_mult(amount: int) -> void:
+	if amount > mult:
+		mult = amount

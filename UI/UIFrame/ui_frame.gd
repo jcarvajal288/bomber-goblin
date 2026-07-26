@@ -4,6 +4,7 @@ extends MarginContainer
 @onready var chests_label: Label = $PanelContainer/ChestsMarginContainer/ChestsLabel
 @onready var timer_label: Label = $PanelContainer/TimerMarginContainer/TimerLabel
 @onready var enemy_label: Label = $PanelContainer/EnemyMarginContainer/EnemyLabel
+@onready var mult_label: Label = $PanelContainer/MultCounterMarginCountainer/MultCounter
 
 
 func _ready() -> void:
@@ -17,6 +18,10 @@ func _process(_delta: float) -> void:
 	chests_label.text  = "%02d" % Global.chests_left
 	timer_label.text = "%03d" % $StageTimer.time_left
 	enemy_label.text = "%02d" % Global.enemies_left
+	if ScoreTracker.mult > 0:
+		mult_label.text = "2^%d" % ScoreTracker.mult
+	else:
+		mult_label.text = ""
 
 
 func decrease_timer() -> void:

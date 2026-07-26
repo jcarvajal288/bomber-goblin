@@ -4,8 +4,13 @@
 [ext_resource type="Script" uid="uid://dq3x5ohwcaeog" path="res://UI/UIFrame/ui_frame.gd" id="1_rdln5"]
 [ext_resource type="LabelSettings" uid="uid://b4wb1wq4ajlrd" path="res://UI/_fonts/high_birth_label_settings.tres" id="2_diwxs"]
 [ext_resource type="PackedScene" uid="uid://doronur15uvhu" path="res://UI/BombPreview/BombPreview.tscn" id="2_qlmyq"]
+[ext_resource type="FontFile" uid="uid://oygny1aq118x" path="res://UI/_fonts/High_Birth.ttf" id="5_4jo15"]
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_r0tkx"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_3kflg"]
+font = ExtResource("5_4jo15")
+font_size = 18
 
 [node name="UiFrame" type="MarginContainer" unique_id=1656794709]
 anchors_preset = 15
@@ -93,6 +98,19 @@ layout_mode = 2
 size_flags_horizontal = 8
 size_flags_vertical = 8
 stretch_mode = 2
+
+[node name="MultCounterMarginCountainer" type="MarginContainer" parent="PanelContainer" unique_id=1359977978]
+layout_mode = 2
+size_flags_horizontal = 8
+size_flags_vertical = 4
+theme_override_constants/margin_left = 0
+theme_override_constants/margin_top = 35
+theme_override_constants/margin_right = 104
+
+[node name="MultCounter" type="Label" parent="PanelContainer/MultCounterMarginCountainer" unique_id=951846233]
+layout_mode = 2
+text = "2^99"
+label_settings = SubResource("LabelSettings_3kflg")
 
 [node name="StageTimer" type="Timer" parent="." unique_id=1650283133]
 wait_time = 300.0
