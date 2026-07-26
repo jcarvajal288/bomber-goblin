@@ -4,6 +4,9 @@ const MAIN_MENU_PATH = "res://UI/MainMenu/MainMenu.tscn"
 
 @onready var win_status_label = $ColorRect/CenterContainer/VBoxContainer/StageClear
 @onready var score_label = $ColorRect/CenterContainer/VBoxContainer/ScoreLabel
+@onready var longest_chain_label = $ColorRect/CenterContainer/VBoxContainer/LongestChainLabel
+@onready var deaths_label = $ColorRect/CenterContainer/VBoxContainer/DeathsLabel
+
 
 var did_player_win: bool = true
 
@@ -12,6 +15,8 @@ func _ready() -> void:
 	if not did_player_win:
 		win_status_label.text = "Time's Up!"
 	score_label.text = "Score: %s" % format_commas(ScoreTracker.score)
+	longest_chain_label.text = "Longest Chain: %d" % ScoreTracker.max_mult
+	deaths_label.text = "Deaths: %d" % ScoreTracker.deaths
 
 
 func _process(_delta: float) -> void:

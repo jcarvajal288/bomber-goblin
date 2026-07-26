@@ -4,10 +4,19 @@
 [ext_resource type="FontFile" uid="uid://oygny1aq118x" path="res://UI/_fonts/High_Birth.ttf" id="2_q8mru"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_fuhmt"]
+line_spacing = 0.0
 font = ExtResource("2_q8mru")
 font_size = 18
 
 [sub_resource type="LabelSettings" id="LabelSettings_r0tkx"]
+font = ExtResource("2_q8mru")
+font_size = 9
+
+[sub_resource type="LabelSettings" id="LabelSettings_yama0"]
+font = ExtResource("2_q8mru")
+font_size = 9
+
+[sub_resource type="LabelSettings" id="LabelSettings_qvsfp"]
 font = ExtResource("2_q8mru")
 font_size = 9
 
@@ -46,7 +55,8 @@ alignment = 1
 
 [node name="StageClear" type="Label" parent="ColorRect/CenterContainer/VBoxContainer" unique_id=951675174]
 layout_mode = 2
-text = "Stage Clear!"
+text = "Stage Clear!
+"
 label_settings = SubResource("LabelSettings_fuhmt")
 horizontal_alignment = 1
 
@@ -54,11 +64,21 @@ horizontal_alignment = 1
 layout_mode = 2
 text = "Score:"
 label_settings = SubResource("LabelSettings_r0tkx")
-horizontal_alignment = 1
+
+[node name="LongestChainLabel" type="Label" parent="ColorRect/CenterContainer/VBoxContainer" unique_id=1755442160]
+layout_mode = 2
+text = "Longest Chain:"
+label_settings = SubResource("LabelSettings_yama0")
+
+[node name="DeathsLabel" type="Label" parent="ColorRect/CenterContainer/VBoxContainer" unique_id=836099593]
+layout_mode = 2
+text = "Deaths:"
+label_settings = SubResource("LabelSettings_qvsfp")
 
 [node name="RetryPrompt" type="Label" parent="ColorRect/CenterContainer/VBoxContainer" unique_id=222701829]
 layout_mode = 2
-text = "Press 'R' to retry"
+text = "
+Press 'R' to retry"
 label_settings = SubResource("LabelSettings_p6ya2")
 horizontal_alignment = 1
 

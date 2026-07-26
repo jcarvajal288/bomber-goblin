@@ -4,7 +4,9 @@ const SCORE_TOAST_SCENE = preload("res://UI/ScoreToast/ScoreToast.tscn")
 
 @onready var score: int = 0
 @onready var mult: int = 0
+@onready var max_mult: int = 0
 @onready var mult_color: Color = Color.WHITE
+@onready var deaths: int = 0
 
 signal add_score(amount: int, score_position: Vector2, multiplier: int)
 signal add_mult(amount)
@@ -74,10 +76,14 @@ func _show_toast(text: String, toast_position, color: Color) -> void:
 func reset_scores() -> void:
 	score = 0
 	mult = 0
+	max_mult = 0
+	deaths = 0
 
 
 func _add_mult(amount: int) -> void:
 	if amount > mult:
 		mult = amount
 		mult_color = get_color_for_multiplier(mult)
+	if amount > max_mult:
+		max_mult = amount
 	$MultTimer.start(3.0)

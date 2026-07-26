@@ -46,7 +46,7 @@ x Level selection screen
 x Build level 3
 x Display score on end screen with commas
 x Add multiplier counter to UI
-_ Add death counter to end screen
+x Add death counter and longest chain counter to end screen
 _ Increase allotted time for Level 3
 
 

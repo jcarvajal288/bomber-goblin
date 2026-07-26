@@ -3,6 +3,7 @@ extends State
 
 func enter() -> void:
 	super()
+	ScoreTracker.deaths += 1
 	subject.has_exploded = true
 	Sounds.play_sound.emit(Sounds.SoundEffect.SAPPER_DEATH, subject.global_position)
 
