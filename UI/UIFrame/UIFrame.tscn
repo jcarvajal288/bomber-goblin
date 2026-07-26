@@ -30,17 +30,18 @@ stretch_mode = 2
 
 [node name="ScoreMarginContainer" type="MarginContainer" parent="PanelContainer" unique_id=486195320]
 layout_mode = 2
-size_flags_horizontal = 0
+size_flags_horizontal = 8
 size_flags_vertical = 0
-theme_override_constants/margin_left = 87
+theme_override_constants/margin_left = 2
 theme_override_constants/margin_top = 18
+theme_override_constants/margin_right = 266
 
 [node name="ScoreLabel" type="Label" parent="PanelContainer/ScoreMarginContainer" unique_id=879861496]
 z_index = 1
 layout_mode = 2
 size_flags_horizontal = 0
 size_flags_vertical = 0
-text = "000000000000"
+text = "00000000000000"
 label_settings = ExtResource("2_diwxs")
 horizontal_alignment = 2
 
