@@ -20,8 +20,10 @@ func _process(_delta: float) -> void:
 	enemy_label.text = "%02d" % Global.enemies_left
 	if ScoreTracker.mult > 1:
 		mult_label.text = "2^%d" % ScoreTracker.mult
+		mult_label.modulate = ScoreTracker.mult_color
 	else:
 		mult_label.text = ""
+		mult_label.modulate = Color.WHITE
 
 
 func decrease_timer() -> void:
