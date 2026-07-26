@@ -88,6 +88,6 @@ func _add_mult(amount: int) -> void:
 	if amount > mult:
 		mult = amount
 		mult_color = get_color_for_multiplier(mult)
+		$MultTimer.start(3.0)
 	if amount > max_mult:
 		max_mult = amount
-	$MultTimer.start(3.0)
