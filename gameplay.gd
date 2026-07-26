@@ -24,6 +24,7 @@ func start_level(level_index: int) -> void:
 	var level = levels[level_index].instantiate()
 	current_level = level
 	add_child(level)
+	$CanvasLayer/UiFrame.set_timer_length(current_level.data.timer_length)
 
 
 func _on_victory() -> void:

@@ -2,11 +2,13 @@
 
 [ext_resource type="TileSet" uid="uid://p8pdsfnjrpx6" path="res://Levels/MountainStronghold/mountain_stronghold.tres" id="1_eg7w4"]
 [ext_resource type="Script" uid="uid://ciuxt6f00qxm7" path="res://Levels/level.gd" id="1_y0ua3"]
+[ext_resource type="Resource" uid="uid://bwxaln5qde5nr" path="res://Levels/MountainStronghold/interior_data.tres" id="2_by2pf"]
 [ext_resource type="PackedScene" uid="uid://dv3eobj62gelj" path="res://Levels/PlayerStartMarker.tscn" id="2_y0ua3"]
 [ext_resource type="TileSet" uid="uid://co4t48dw8i0go" path="res://Levels/items_tileset.tres" id="3_lyset"]
 
 [node name="Interior" type="Node2D" unique_id=201470198]
 script = ExtResource("1_y0ua3")
+data = ExtResource("2_by2pf")
 
 [node name="TileMapFloor" type="TileMapLayer" parent="." unique_id=1734678280]
 scale = Vector2(2, 2)

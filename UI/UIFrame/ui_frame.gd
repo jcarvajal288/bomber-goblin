@@ -40,3 +40,7 @@ func _restart_stage() -> void:
 
 func time_over() -> void:
 	Global.signal_defeat.emit()
+
+
+func set_timer_length(timer_length: float) -> void:
+	$StageTimer.start(timer_length)

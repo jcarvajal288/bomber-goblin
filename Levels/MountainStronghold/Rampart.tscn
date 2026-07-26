@@ -2,11 +2,13 @@
 
 [ext_resource type="TileSet" uid="uid://p8pdsfnjrpx6" path="res://Levels/MountainStronghold/mountain_stronghold.tres" id="1_ej3jv"]
 [ext_resource type="Script" uid="uid://ciuxt6f00qxm7" path="res://Levels/level.gd" id="1_ya3df"]
+[ext_resource type="Resource" uid="uid://cls7e0l2bmx23" path="res://Levels/MountainStronghold/rampart_data.tres" id="2_0ncxx"]
 [ext_resource type="TileSet" uid="uid://co4t48dw8i0go" path="res://Levels/items_tileset.tres" id="2_e36qq"]
 [ext_resource type="PackedScene" uid="uid://dv3eobj62gelj" path="res://Levels/PlayerStartMarker.tscn" id="2_emclg"]
 
 [node name="Rampart" type="Node2D" unique_id=347658587]
 script = ExtResource("1_ya3df")
+data = ExtResource("2_0ncxx")
 
 [node name="TileMapBackground" type="TileMapLayer" parent="." unique_id=270256258]
 z_index = -1

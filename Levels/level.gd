@@ -1,4 +1,6 @@
-extends Node
+class_name Level extends Node
+
+@export var data: LevelData
 
 const PLAYER_SCENE = preload("res://Actors/Sapper/Sapper.tscn")
 
