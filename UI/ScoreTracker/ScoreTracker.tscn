@@ -4,3 +4,6 @@
 
 [node name="ScoreTracker" type="Node2D" unique_id=1519864458]
 script = ExtResource("1_ckvjn")
+
+[node name="MultTimer" type="Timer" parent="." unique_id=517557738]
+wait_time = 3.0

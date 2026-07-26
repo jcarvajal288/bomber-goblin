@@ -18,7 +18,7 @@ func _process(_delta: float) -> void:
 	chests_label.text  = "%02d" % Global.chests_left
 	timer_label.text = "%03d" % $StageTimer.time_left
 	enemy_label.text = "%02d" % Global.enemies_left
-	if ScoreTracker.mult > 0:
+	if ScoreTracker.mult > 1:
 		mult_label.text = "2^%d" % ScoreTracker.mult
 	else:
 		mult_label.text = ""

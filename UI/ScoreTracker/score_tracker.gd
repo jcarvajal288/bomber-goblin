@@ -14,7 +14,7 @@ func _ready() -> void:
 	Global.restart_stage.connect(_restart_stage)
 	add_score.connect(_add_score)
 	add_mult.connect(_add_mult)
-	
+	$MultTimer.timeout.connect(func (): mult = 0)
 
 
 func _add_score(amount: int, score_position: Vector2, multiplier: int) -> void:
@@ -58,8 +58,10 @@ func _show_toast(text: String, toast_position, color: Color) -> void:
 
 func _restart_stage() -> void:
 	score = 0
+	mult = 0
 
 
 func _add_mult(amount: int) -> void:
 	if amount > mult:
 		mult = amount
+	$MultTimer.start(3.0)
